@@ -1,4 +1,4 @@
-package Main;
+package main;
 
 import java.awt.Graphics;
 import java.util.concurrent.TimeUnit;
