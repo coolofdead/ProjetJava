@@ -1,9 +1,6 @@
 package network;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.io.ObjectOutputStream;
-import java.io.PrintWriter;
 import java.net.Socket;
 
 public class Client {
@@ -11,27 +8,20 @@ public class Client {
 		try { 
 			Socket s = new Socket("localhost", 4242);
 			
-//			PrintWriter pw = new PrintWriter(s.getOutputStream());
-			
-//			byte a = 0b00000001;
-//			char b = 'a';
-//			boolean c = true;
-//			
-//			pw.println("Hello " + a);
-//			pw.println(b);
-//			pw.println(c);
-//			pw.flush();
+			// TODO avoir 2 clients qui ouvrent une socket
 			
 			ObjectOutputStream os=new ObjectOutputStream(s.getOutputStream());
 			
-		    DataTest obj = new DataTest(3, "cc", true, (byte)0b00000011);
-		    os.writeObject(obj);
+			os.write(10);
 			
-			InputStreamReader in = new InputStreamReader(s.getInputStream());
-			BufferedReader bf = new BufferedReader(in);
-			
-			String str = bf.readLine();
-			System.out.println("Server " + str);
+		    DataTest obj1 = new DataTest(3, "cc", true, (byte)0b00000011, new D(4));
+		    DataTest obj2 = new DataTest(9, "slt", false, (byte)0b00001111, new D(7));
+		    
+		    os.writeObject(obj1);
+		    os.writeObject(obj2);
+		    os.flush();
+		    
+		    os.close();
 		}
 		catch (Exception e) {
 			e.printStackTrace();

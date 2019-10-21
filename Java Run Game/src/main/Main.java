@@ -1,52 +1,48 @@
 package main;
 
-import java.awt.Graphics;
-import java.util.concurrent.TimeUnit;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-
-
 public class Main {
 
 	public static void main(String[] args) {
-		boolean debug = true;
-		
-		Canvas c = new Canvas();
-		
-		JFrame j = new JFrame("Titre");
-		j.setVisible(true);
-		j.setSize(500, 500);
-		j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		j.add(c);
-		
-		float frames;
-		long oldTime = System.currentTimeMillis();
-		long now;
-		
-		while (true) {
-			c.repaint();
+
+		class T extends Thread {
+			private boolean isRunning = true;
 			
-			long delay = (long)(Math.random()+10);
-			try {
-				TimeUnit.MILLISECONDS.sleep(delay);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
+			@Override
+			public synchronized void run() {
+				System.out.println("T1 start");
+				while (isRunning) {
+					System.out.println("T1 run");		
+				}
+				System.out.println("T1 stop");
 			}
 			
-			now = System.currentTimeMillis();		
-			
-			float delta = now - oldTime;
-			frames = 1 / (delta / 1000);
-			
-			oldTime = now;
-			
-			if (debug) {
-				System.out.println("old: " + oldTime + ", now: " + now);
-				System.out.println(delta);
-				System.out.println(frames);
+			public void exit() {
+				isRunning = false;
 			}
 		}
+		
+		T t = new T();
+		
+		new Thread(new Runnable () {
+			@Override
+			public synchronized void run() {
+				System.out.println("T2 start");
+				long t = System.currentTimeMillis();
+				while (t + 1 > System.currentTimeMillis()) {
+					System.out.println("T2 run");
+				}
+				System.out.println("T2 stop");
+			}
+		}).start();
+		
+		t.start();
+//		long old = System.currentTimeMillis();
+//		while(old + 1 > System.currentTimeMillis());
+		
+		t.exit();
+		
+		// create 3 threads slave and 1 master
+		// each slaves will wait X time then sleep
+		// master w8 for slaves to sleep then awake them
 	}
-
 }

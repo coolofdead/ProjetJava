@@ -7,15 +7,17 @@ public class DataTest implements Serializable {
 	String s;
 	boolean b;
 	byte y;
+	D d;
 	
-	public DataTest(int i, String s, boolean b, byte y) {
+	public DataTest(int i, String s, boolean b, byte y, D d) {
 		this.i = i;
 		this.s = s;
 		this.b = b;
 		this.y = y;
+		this.d = d;
 	}
 
 	public void show() {
-		System.out.println(i + ", " + s + ", " + b + ", " + y);
+		System.out.println(i + ", " + s + ", " + b + ", " + y + ", " + d.d);
 	}
 }
