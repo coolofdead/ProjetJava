@@ -4,26 +4,22 @@ import java.util.concurrent.TimeUnit;
 
 import javax.swing.JFrame;
 
-public class Game {
+public class GameLoop {
 	static final int FRAME_AVG = 60;
 
-	public Game () {
+	public GameLoop () {
 		boolean debug = false;
-		
-		Canvas c = new Canvas();
 		
 		JFrame j = new JFrame("Titre");
 		j.setVisible(true);
 		j.setSize(500, 500);
 		j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		j.add(c);
 		
 		float frames;
 		long oldTime = System.currentTimeMillis();
 		long now;
 		
 		while (true) {
-			c.repaint();
 			
 			long delay = (long)(Math.random()+10);
 			try {

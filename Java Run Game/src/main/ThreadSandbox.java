@@ -1,9 +1,8 @@
 package main;
 
-public class Main {
+public class ThreadSandbox {
 
-	public static void main(String[] args) {
-
+	public void Test () {
 		class T extends Thread {
 			private boolean isRunning = true;
 			
