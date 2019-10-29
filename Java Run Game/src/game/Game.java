@@ -2,25 +2,16 @@ package game;
 
 import javax.swing.JFrame;
 
-import input.GameInput;
+import utility.Constant;
 
 public class Game {
 	
-	private static JFrame game = new JFrame("Game");
+	public JFrame window;
 	
 	public Game() {
-		game.setVisible(true);
-		game.setSize(500, 500);
-		game.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	}
-	
-	public static void main(String[] args) {
-		Game g = new Game();
-		
-		GameInput gi = new GameInput();
-	}
-	
-	public static JFrame getGame() {
-		return game;
+		window = new JFrame(Constant.GAME_NAME);
+		window.setVisible(true);
+		window.setSize(Constant.GAME_WIDTH, Constant.GAME_HEIGHT);
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 }

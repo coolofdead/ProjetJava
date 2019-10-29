@@ -3,6 +3,9 @@ package input;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+import game.Game;
+import game.Main;
+
 public class GameInput {
 	
 	public void init() {
@@ -27,7 +30,7 @@ public class GameInput {
 			
 			@Override
 			public void run() {
-				j.addKeyListener(this.k);
+				Main.game.window.addKeyListener(this.k);
 				while (true) {
 					
 				}
