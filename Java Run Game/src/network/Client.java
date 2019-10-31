@@ -8,8 +8,6 @@ public class Client {
 		try { 
 			Socket s = new Socket("localhost", 4242);
 			
-			// TODO avoir 2 clients qui ouvrent une socket
-			
 			ObjectOutputStream os=new ObjectOutputStream(s.getOutputStream());
 			
 			os.write(10);
