@@ -1,4 +1,4 @@
-package sandbox;
+package _sandbox;
 
 import input.InputEvent;
 import input.InputListener;

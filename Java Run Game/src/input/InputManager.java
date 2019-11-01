@@ -2,7 +2,7 @@ package input;
 
 import java.util.ArrayList;
 
-import sandbox.PlayerController;
+import _sandbox.PlayerController;
 import utility.Initialisable;
 
 public class InputManager implements Initialisable {
