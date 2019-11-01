@@ -2,7 +2,6 @@ package input;
 
 import java.util.ArrayList;
 
-import sandbox.PlayerController;
 import utility.Initialisable;
 
 public class InputManager implements Initialisable {
@@ -15,9 +14,6 @@ public class InputManager implements Initialisable {
 		this.listeners = new ArrayList<InputListener>();
 		inputReader = new InputReader();
 		inputReader.start();
-		
-		// TODO remove 
-		addInputListener(new PlayerController());
 	}
 	
 	public void clearListeners() {
