@@ -16,7 +16,7 @@ public class InputManager implements Initialisable {
 		inputReader = new InputReader();
 		inputReader.start();
 		
-		// TODO remove 
+		// TODO DEBUG
 		addInputListener(new PlayerController());
 	}
 	
