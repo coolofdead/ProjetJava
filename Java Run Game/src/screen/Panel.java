@@ -3,13 +3,14 @@ package screen;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
+import javax.swing.JComponent;
 import javax.swing.JPanel;
 
-public abstract class Panel extends JPanel implements Iterable<PanelComponent>, Iterator<PanelComponent> {
+public abstract class Panel extends JPanel implements Iterable<JComponent>, Iterator<JComponent> {
 
 	private static final long serialVersionUID = 4025229043284954823L;
 
-	protected PanelComponent[] components;
+	protected JComponent[] components;
 	
 	protected int cursor;
 	
@@ -17,7 +18,7 @@ public abstract class Panel extends JPanel implements Iterable<PanelComponent>, 
 		return this.cursor < this.components.length;
 	}
 	
-	public PanelComponent next() {
+	public JComponent next() {
         if(this.hasNext()) {
             int current = cursor;
             cursor++;
@@ -27,7 +28,7 @@ public abstract class Panel extends JPanel implements Iterable<PanelComponent>, 
 	}
 
 	@Override
-	public Iterator<PanelComponent> iterator() {
+	public Iterator<JComponent> iterator() {
 		this.cursor = 0;
 		return this;
 	}

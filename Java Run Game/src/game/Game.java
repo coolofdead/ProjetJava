@@ -27,5 +27,4 @@ public class Game implements Initialisable {
 		inputManager.init();
 	}
 	
-	
 }

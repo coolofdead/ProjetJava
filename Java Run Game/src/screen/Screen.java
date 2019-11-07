@@ -1,5 +1,6 @@
 package screen;
 
+import javax.swing.JComponent;
 import javax.swing.JFrame;
 
 import utility.Constant;
@@ -15,7 +16,7 @@ public class Screen implements Initialisable {
 	}
 	
 	public void changePanel(Panel newPanel) {
-		for (PanelComponent c : this.currentPanel) {
+		for (JComponent c : this.currentPanel) {
 			this.window.remove(c);
 		}
 		this.window.remove(this.currentPanel);
@@ -23,7 +24,7 @@ public class Screen implements Initialisable {
 		this.currentPanel = newPanel;
 		this.window.add(this.currentPanel);
 		
-		for (PanelComponent c : this.currentPanel) {
+		for (JComponent c : this.currentPanel) {
 			this.window.add(c);
 		}
 	}
@@ -35,6 +36,11 @@ public class Screen implements Initialisable {
 		this.window.setSize(Constant.GAME_WIDTH, Constant.GAME_HEIGHT);
 		this.window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		this.currentPanel = new Menu();
+		this.currentPanel = new MenuPanel();
+		
+		// TODO create a method add the panel & their components to the window
+		this.window.add(this.currentPanel);
+		
+		// TODO create a timer to redraw every X ticks
 	}
 }
