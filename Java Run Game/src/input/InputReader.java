@@ -44,7 +44,7 @@ public class InputReader extends Thread {
 	
 	@Override
 	public void run() {
-		Main.game.window.addKeyListener(this.k);
+		Main.game.screen.getWindow().addKeyListener(this.k);
 		
 		while (Main.game.isRunning) {
 			// TODO update: use socket to read values from raspberry
