@@ -18,7 +18,7 @@ public class Missile : MonoBehaviour
 
     void Update()
     {
-        this.transform.position += this.transform.forward * speed * Time.deltaTime;
+        transform.position += transform.forward * speed * Time.deltaTime;
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -29,7 +29,7 @@ public class Missile : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" && gameObject.tag != "Enemy Projectile")
         {
             collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
             Destroy(gameObject);

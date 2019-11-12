@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
 
     public float speed = 10f;
     public float rotationSpeed = 30f;
+    public float autoStableSpeed = 0.5f;
 
     public float tiltRight;
     public float tiltlLeft;
@@ -28,8 +29,8 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(missilePrefab, canonDroit.position, canonDroit.rotation);
-            Instantiate(missilePrefab, canonGauche.position, canonGauche.rotation);
+            Instantiate(missilePrefab, canonDroit.position, Quaternion.identity).transform.LookAt(canonDroit.position + canonDroit.forward);
+            Instantiate(missilePrefab, canonGauche.position, Quaternion.identity).transform.LookAt(canonGauche.position + canonGauche.forward);
         }
 
         Vector3 dir = Vector3.zero;
@@ -56,40 +57,26 @@ public class Player : MonoBehaviour
 
         if (!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
         {
-            if (vaisseau.transform.rotation.x > 0)
+            if (vaisseau.transform.rotation.w < 0)
             {
-                vaisseau.transform.Rotate(Vector3.right, -rotationSpeed * 2 * Time.deltaTime);
+                vaisseau.transform.Rotate(Vector3.forward, -rotationSpeed * autoStableSpeed * Time.deltaTime);
             }
 
-            if (vaisseau.transform.rotation.x < 0)
+            if (vaisseau.transform.rotation.w > 0)
             {
-                vaisseau.transform.Rotate(Vector3.right, rotationSpeed * 2 * Time.deltaTime);
+                vaisseau.transform.Rotate(Vector3.forward, rotationSpeed * autoStableSpeed * Time.deltaTime);
             }
         }
 
-        if (Input.GetKey(KeyCode.RightArrow) && vaisseau.transform.rotation.x > tiltRight)
+        if (Input.GetKey(KeyCode.RightArrow) && vaisseau.transform.rotation.w < tiltRight)
         {
-            if (vaisseau.transform.rotation.x < 0)
-            {
-                vaisseau.transform.Rotate(Vector3.right, -rotationSpeed * Time.deltaTime);
-            }
-            else
-            {
-                vaisseau.transform.Rotate(Vector3.right, -rotationSpeed * 2 * Time.deltaTime);
-            }
+            vaisseau.transform.Rotate(Vector3.forward, -rotationSpeed * Time.deltaTime);
         }
 
 
-        if (Input.GetKey(KeyCode.LeftArrow) && vaisseau.transform.rotation.x < tiltlLeft)
+        if (Input.GetKey(KeyCode.LeftArrow) && vaisseau.transform.rotation.w > tiltlLeft)
         {
-            if (vaisseau.transform.rotation.x > 0)
-            {
-                vaisseau.transform.Rotate(Vector3.right, rotationSpeed * Time.deltaTime);
-            }
-            else
-            {
-                vaisseau.transform.Rotate(Vector3.right, rotationSpeed * 2 * Time.deltaTime);
-            }
+             vaisseau.transform.Rotate(Vector3.forward, rotationSpeed * Time.deltaTime);
         }
 
         vaisseau.transform.position += dir * speed * Time.deltaTime;
