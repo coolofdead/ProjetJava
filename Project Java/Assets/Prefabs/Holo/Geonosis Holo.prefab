@@ -243,8 +243,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8444517978311124747}
+  - component: {fileID: 2488256227354217809}
   m_Layer: 0
-  m_Name: geonosis
+  m_Name: Geonosis Holo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -257,7 +258,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4858167409039938840}
-  m_LocalRotation: {x: 0.10918182, y: 0.7127184, z: 0.5983466, w: 0.34941834}
+  m_LocalRotation: {x: -0.43012512, y: 0, z: 0, w: 0.9027694}
   m_LocalPosition: {x: 2.9307282, y: 0, z: -4.6243067}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -269,7 +270,20 @@ Transform:
   - {fileID: 3479664661295713067}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -50.951004, y: 93.62, z: 65.61301}
+  m_LocalEulerAnglesHint: {x: -50.951004, y: 0, z: 0}
+--- !u!135 &2488256227354217809
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4858167409039938840}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 60
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6509077808801361969
 GameObject:
   m_ObjectHideFlags: 0

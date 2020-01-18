@@ -300,7 +300,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f404d01d3f3fa84bbe485fa0d4617eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
 --- !u!1 &244736261 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 456d3c3a730068c41bac897181185aae,
@@ -499,7 +498,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f404d01d3f3fa84bbe485fa0d4617eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
 --- !u!1001 &417884954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1473,7 +1471,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f404d01d3f3fa84bbe485fa0d4617eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
 --- !u!1001 &1050893012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1571,6 +1568,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 614506495935202172, guid: 3aa55dbf4a8239f4abbbe9c351776c2d,
+        type: 3}
+      propertyPath: m_Name
+      value: "Chasseur-ti n\xB01"
+      objectReference: {fileID: 0}
     - target: {fileID: 8302356688015183559, guid: 3aa55dbf4a8239f4abbbe9c351776c2d,
         type: 3}
       propertyPath: m_Enabled
@@ -1581,11 +1583,6 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 1dfb168e6a825c041a607b485ad60cbe, type: 2}
-    - target: {fileID: 614506495935202172, guid: 3aa55dbf4a8239f4abbbe9c351776c2d,
-        type: 3}
-      propertyPath: m_Name
-      value: "Chasseur-ti n\xB01"
-      objectReference: {fileID: 0}
     - target: {fileID: 614506495935202173, guid: 3aa55dbf4a8239f4abbbe9c351776c2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2673,7 +2670,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f404d01d3f3fa84bbe485fa0d4617eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 60
 --- !u!1 &1825124193 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 456d3c3a730068c41bac897181185aae,
@@ -2958,7 +2954,7 @@ PrefabInstance:
     - target: {fileID: 2445437632396176824, guid: 8bc6d0f3e7005c04c81c48cf54764a63,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2445437632396176826, guid: 8bc6d0f3e7005c04c81c48cf54764a63,
         type: 3}
