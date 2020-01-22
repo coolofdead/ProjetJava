@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Projectile
   - Enemy
-  - Destroyable
   - Enemy Projectile
   layers:
   - Default

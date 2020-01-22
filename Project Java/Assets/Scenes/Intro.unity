@@ -568,6 +568,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4443431882965507968, guid: 6b47718949ac1ea43b26d843822285d8,
+        type: 3}
+      propertyPath: m_Text
+      value: '            CHAPITRE i     Bataille sur coruscant  un moment apres
+        le deces du hero, l''histoire continue. etc ecteee zedazd zaeazeaz az eaze
+        aze azeazz a aze aze azeza eaze aze azeaza eaz eaze   aze aze azazdazeaze
+        azeazeazeazeazeaze zae azea'
+      objectReference: {fileID: 0}
     - target: {fileID: 4443431883495727671, guid: 6b47718949ac1ea43b26d843822285d8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -678,18 +686,15 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1474388032}
-    - target: {fileID: 4443431882965507968, guid: 6b47718949ac1ea43b26d843822285d8,
-        type: 3}
-      propertyPath: m_Text
-      value: '            CHAPITRE i     Bataille sur coruscant  un moment apres
-        le deces du hero, l''histoire continue. etc ecteee zedazd zaeazeaz az eaze
-        aze azeazz a aze aze azeza eaze aze azeaza eaz eaze   aze aze azazdazeaze
-        azeazeazeazeazeaze zae azea'
-      objectReference: {fileID: 0}
     - target: {fileID: 4443431882965507970, guid: 6b47718949ac1ea43b26d843822285d8,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443431882965507969, guid: 6b47718949ac1ea43b26d843822285d8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -737
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b47718949ac1ea43b26d843822285d8, type: 3}

@@ -1,0 +1,2 @@
+C:\Users\Thomas\Downloads\ProjetJava\Project Java\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\Thomas\Downloads\ProjetJava\Project Java\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

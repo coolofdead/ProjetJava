@@ -17,7 +17,6 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        DontDestroyOnLoad(transform.parent);
         planets = holoMap.GetComponentsInChildren<LevelPlanet>();
 
         for (int i=0; i < planets.Length; i++)

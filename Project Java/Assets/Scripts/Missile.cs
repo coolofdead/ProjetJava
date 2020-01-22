@@ -23,12 +23,6 @@ public class Missile : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Destroyable")
-        {
-            Destroy(collision.gameObject);
-            Destroy(gameObject);
-        }
-
         if (collision.gameObject.tag == "Enemy" && gameObject.tag != "Enemy Projectile")
         {
             collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
