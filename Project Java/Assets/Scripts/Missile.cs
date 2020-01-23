@@ -5,15 +5,13 @@ using UnityEngine;
 public class Missile : MonoBehaviour
 {
     public float speed = 10f;
-    public ParticleSystem trace;
     public float damage = 1f;
     public float lifeTime = 10f;
+    public string collidableTag;
 
     private void Start()
     {
         Destroy(gameObject, lifeTime);
-        if (trace != null)
-            trace.Play();
     }
 
     void Update()
@@ -21,11 +19,11 @@ public class Missile : MonoBehaviour
         transform.position += transform.forward * speed * Time.deltaTime;
     }
 
-    public void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Enemy" && gameObject.tag != "Enemy Projectile")
+        if (other.gameObject.tag == collidableTag)
         {
-            collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+            other.gameObject.GetComponent<Enemy>().TakeDamage(damage);
             Destroy(gameObject);
         }
     }
