@@ -16,4 +16,9 @@ public class EventAnimation : MonoBehaviour
 
         AnimationWrapper.StartAnimation(animatorName, animationName);
     }
+
+    public void EnableUI()
+    {
+        AnimationWrapper.EnableUI();
+    }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AnimationWrapper : MonoBehaviour
 {
+    public GameObject UI;
     private Animator[] animators;
     private static AnimationWrapper singleton;
 
@@ -29,5 +30,10 @@ public class AnimationWrapper : MonoBehaviour
 
         if (!animatorFound)
             Debug.Log(animatorName + " n'a pas été trouvé");
+    }
+
+    public static void EnableUI()
+    {
+        singleton.UI.SetActive(true);
     }
 }

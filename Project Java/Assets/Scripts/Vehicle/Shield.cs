@@ -82,8 +82,10 @@ public class Shield : MonoBehaviour, IDamageable
         isRecovering = true;
         while (actifTimeLeft < recoveryTime)
         {
-            yield return new WaitForSeconds(1);
-            actifTimeLeft++;
+            yield return new WaitForEndOfFrame();
+            actifTimeLeft += Time.deltaTime;
+            if (actifTimeLeft > recoveryTime)
+                actifTimeLeft = recoveryTime;
         }
         life = maxLife;
         isRecovering = false;

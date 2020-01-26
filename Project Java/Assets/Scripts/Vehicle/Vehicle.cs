@@ -4,6 +4,13 @@ using UnityEngine;
 
 public abstract class Vehicle : MonoBehaviour
 {
+    protected float forwardSpeed;
+    public float ForwardSpeed { get { return forwardSpeed; } }
+    public float maxForwardSpeed;
+    public float minForwardSpeed;
+    public float acceleration;
+    public float decelaration;
+
     [SerializeField]
     protected KeyCode leftAxis, rightAxis, upAxis, downAxis, button;
 
