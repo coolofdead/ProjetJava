@@ -60,12 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AnimationWrapper.cs" />
+    <Compile Include="Assets\Scripts\Animation\AnimationWrapper.cs" />
+    <Compile Include="Assets\Scripts\Animation\EventAnimation.cs" />
     <Compile Include="Assets\Scripts\Asteroid.cs" />
     <Compile Include="Assets\Scripts\CameraBeha.cs" />
-    <Compile Include="Assets\Scripts\CameraShake.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\EventAnimation.cs" />
     <Compile Include="Assets\Scripts\FXAA\Antialiasing.cs" />
     <Compile Include="Assets\Scripts\FXAA\PostEffectsBase.cs" />
     <Compile Include="Assets\Scripts\FXAA\PostEffectsHelper.cs" />
@@ -75,17 +73,26 @@
     <Compile Include="Assets\Scripts\Intro\IntroUI.cs" />
     <Compile Include="Assets\Scripts\Menu\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Menu\LevelPlanet.cs" />
-    <Compile Include="Assets\Scripts\Menu\MenuUI.cs" />
     <Compile Include="Assets\Scripts\Missile.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Spaceship\Allied.cs" />
+    <Compile Include="Assets\Scripts\Spaceship\Arc170.cs" />
+    <Compile Include="Assets\Scripts\Spaceship\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Spaceship\Gunship.cs" />
+    <Compile Include="Assets\Scripts\Spaceship\Spaceship.cs" />
+    <Compile Include="Assets\Scripts\Spaceship\SpaceshipManager.cs" />
+    <Compile Include="Assets\Scripts\Spaceship\TriFighter.cs" />
     <Compile Include="Assets\Scripts\UI\AbstractGoal.cs" />
     <Compile Include="Assets\Scripts\UI\Goal.cs" />
+    <Compile Include="Assets\Scripts\UI\MenuUI.cs" />
     <Compile Include="Assets\Scripts\UI\ShieldGoal.cs" />
     <Compile Include="Assets\Scripts\UI\SpaceshipGoal.cs" />
     <Compile Include="Assets\Scripts\UI\Timer.cs" />
     <Compile Include="Assets\Scripts\UI\TurretGoal.cs" />
     <Compile Include="Assets\Scripts\UI\YwingShield.cs" />
+    <Compile Include="Assets\Scripts\Utils\CameraShake.cs" />
     <Compile Include="Assets\Scripts\Utils\Rotate.cs" />
+    <Compile Include="Assets\Scripts\Utils\VirtualInput.cs" />
     <Compile Include="Assets\Scripts\Utils\Volumetric\Utils\TransformExtensionMethods.cs" />
     <Compile Include="Assets\Scripts\Utils\Volumetric\VolumetricLineBehavior.cs" />
     <Compile Include="Assets\Scripts\Utils\Volumetric\VolumetricLineSettings.cs" />
@@ -95,7 +102,6 @@
     <Compile Include="Assets\Scripts\Utils\WarpSpeed.cs" />
     <Compile Include="Assets\Scripts\Vehicle\Shield.cs" />
     <Compile Include="Assets\Scripts\Vehicle\Vehicle.cs" />
-    <Compile Include="Assets\Scripts\Vehicle\VirtualInput.cs" />
     <Compile Include="Assets\Scripts\Vehicle\Y-wing\Ywing.cs" />
     <Compile Include="Assets\Scripts\Vehicle\Y-wing\YwingTurret.cs" />
     <Compile Include="Assets\TEST\Detonator Explosion Framework\System\Detonator.cs" />

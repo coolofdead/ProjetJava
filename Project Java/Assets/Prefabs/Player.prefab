@@ -221,6 +221,7 @@ MonoBehaviour:
   player: {fileID: 6192225102526633860}
   recoilFactor: 14
   shakeSpeedRatio: 0.9
+  recoil: {x: 0, y: 0, z: 0}
 --- !u!114 &1709248790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,7 +304,8 @@ MonoBehaviour:
   upAxis: 122
   downAxis: 115
   button: 116
-  speed: 10
+  horizontalRotateSpeed: 10
+  rotateForwardSpeed: 30
   rotateSpeed: 160
   tiltRight: 15
   tiltLeft: -15
@@ -311,6 +313,7 @@ MonoBehaviour:
   - {fileID: 919133891034729830}
   - {fileID: 9080074798048572980}
   - {fileID: 4827298452345266984}
+  tranformToMove: {fileID: 6192225102526633863}
 --- !u!1001 &343042497867814915
 PrefabInstance:
   m_ObjectHideFlags: 0

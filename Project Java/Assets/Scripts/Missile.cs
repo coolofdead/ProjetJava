@@ -5,7 +5,7 @@ using UnityEngine;
 public class Missile : MonoBehaviour
 {
     public float speed = 10f;
-    public float damage = 1f;
+    public int damage = 1;
     public float lifeTime = 10f;
     public string collidableTag;
 

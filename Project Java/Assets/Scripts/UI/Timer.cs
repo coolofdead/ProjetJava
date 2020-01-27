@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        text.text = Time.time.ToString("0.00").Replace(',', ':');
+        int min = (int)(Time.time / 60);
+        text.text = min.ToString("0") + ":" + (Time.time - min * 60).ToString("0.00").Replace(',', ':');
     }
 }

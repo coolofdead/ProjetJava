@@ -7,8 +7,10 @@ public class Player : MonoBehaviour
     public Vehicle player1;
     public Vehicle player2;
 
-    private void Update()
+    public static Player player;
+
+    private void Awake()
     {
-        transform.position += transform.forward * player1.ForwardSpeed;
+        player = this;
     }
 }
