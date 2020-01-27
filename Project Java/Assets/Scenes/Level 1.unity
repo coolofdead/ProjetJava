@@ -512,6 +512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 164991735}
   - component: {fileID: 164991737}
+  - component: {fileID: 164991738}
   - component: {fileID: 164991736}
   m_Layer: 5
   m_Name: Timer
@@ -581,6 +582,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164991734}
   m_CullTransparentMesh: 0
+--- !u!114 &164991738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164991734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9902ccd7dc0eaba4cba9b025b2ba5079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &172394481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17681,6 +17694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 230004908}
+  - component: {fileID: 230004909}
   m_Layer: 5
   m_Name: "n\xB01"
   m_TagString: Untagged
@@ -17708,6 +17722,22 @@ RectTransform:
   m_AnchoredPosition: {x: -0.0000064519, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &230004909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230004907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 498e34cdb95e19e4a8f92fe1351c4bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 305373527}
+  completed: {r: 0, g: 1, b: 0, a: 1}
+  uncompleted: {r: 1, g: 0, b: 0, a: 1}
+  spaceships: []
 --- !u!1001 &231852812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19254,6 +19284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 774815092}
+  - component: {fileID: 774815093}
   m_Layer: 5
   m_Name: Goal
   m_TagString: Untagged
@@ -19284,6 +19315,22 @@ RectTransform:
   m_AnchoredPosition: {x: -323, y: 135}
   m_SizeDelta: {x: 169.7, y: 236.75}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &774815093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774815091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f04c677b00e2d2444b5d7615f3725bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goals:
+  - {fileID: 230004909}
+  - {fileID: 2069569313}
+  - {fileID: 1452957611}
 --- !u!1 &779941486
 GameObject:
   m_ObjectHideFlags: 0
@@ -19299,7 +19346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &779941487
 Transform:
   m_ObjectHideFlags: 0
@@ -21237,7 +21284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &822968652
 Transform:
   m_ObjectHideFlags: 0
@@ -21300,7 +21347,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &828554168
 Transform:
   m_ObjectHideFlags: 0
@@ -22189,6 +22236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1452957610}
+  - component: {fileID: 1452957611}
   m_Layer: 5
   m_Name: "n\xB03"
   m_TagString: Untagged
@@ -22216,6 +22264,23 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000010267, y: -249}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1452957611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452957609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6996f6b570ef144b4dde980323659f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 288085011}
+  completed: {r: 0, g: 1, b: 0, a: 1}
+  uncompleted: {r: 1, g: 0, b: 0, a: 1}
+  shields:
+  - {fileID: 633765637}
 --- !u!1001 &1480011864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40020,7 +40085,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1801365637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40349,6 +40414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2069569312}
+  - component: {fileID: 2069569313}
   m_Layer: 5
   m_Name: "n\xB02"
   m_TagString: Untagged
@@ -40376,6 +40442,24 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000010267, y: -117}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2069569313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069569311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5043dfb50dd35b478e808292648d076, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 818176043}
+  completed: {r: 0, g: 1, b: 0, a: 1}
+  uncompleted: {r: 1, g: 0, b: 0, a: 1}
+  turrets:
+  - {fileID: 105491157}
+  - {fileID: 644023504}
 --- !u!1 &2112707659
 GameObject:
   m_ObjectHideFlags: 0
