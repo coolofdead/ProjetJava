@@ -1,13 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Missile : MonoBehaviour
 {
     public float speed = 10f;
     public int damage = 1;
     public float lifeTime = 10f;
-    public string collidableTag;
+
+    [SerializeField]
+    private bool isAlliedMissile;
 
     private void Start()
     {
@@ -21,9 +21,26 @@ public class Missile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == collidableTag)
+        IDamageable unit = other.gameObject.GetComponent<IDamageable>();
+
+        if (unit != null)
         {
-            other.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+            if (!isAlliedMissile)
+            {
+                if (unit is Player || unit is Allied)
+                {
+                    unit.TakeDamage(damage);
+                }
+            }
+
+            if (isAlliedMissile)
+            {
+                if (unit is Enemy)
+                {
+                    unit.TakeDamage(damage);
+                }
+            }
+
             Destroy(gameObject);
         }
     }

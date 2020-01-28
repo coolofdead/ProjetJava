@@ -1,27 +1,24 @@
 ﻿using UnityEngine;
 
-public class Ywing : Vehicle, IDamageable
+public class Ywing : Vehicle
 {
     public float rotateSpeed = 130f;
     public float tiltRight;
     public float tiltLeft;
     private float curRot = 0;
-    private int life = 3;
 
     [SerializeField]
     private Shield shield;
-    public GameObject[] fireImpacts;
-
-    [SerializeField]
-    private Player player;
 
     public Vector3 angularForce = new Vector3(20.0f, 20.0f, 30.0f);
     private const float forceMultiplier = 100.0f;
     private Rigidbody rbody;
 
-    void Awake()
+    protected override void Start()
     {
-        rbody = player.gameObject.AddComponent<Rigidbody>();
+        base.Start();
+
+        rbody = Player.player.gameObject.AddComponent<Rigidbody>();
         rbody.angularDrag = 1.5f;
         rbody.drag = 1f;
         rbody.useGravity = false;
@@ -80,18 +77,6 @@ public class Ywing : Vehicle, IDamageable
             int tiltDir = dir.x > 0 ? -1 : 1;
             curRot += dir.x > 0 ? 1 : -1;
             transform.Rotate(Vector3.forward, (rotateSpeed * tiltDir) * 0.016f);
-        }
-    }
-
-    public void TakeDamage(int amount, bool instantKill = false)
-    {
-        life -= instantKill ? life : amount;
-        for (int i = 0; i < 3 - life; i++)
-            fireImpacts[i].SetActive(true);
-
-        if (life <= 0)
-        {
-            Debug.Log("Player die");
         }
     }
 }

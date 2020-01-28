@@ -7,9 +7,11 @@ public class SpaceshipManager : MonoBehaviour
 {
     [SerializeField]
     private Spaceship[] spaceships;
-    public float spaceshipMinSpawnRange = 500f;
-    public int maxSpaceshipsSpawn = 15;
-    public float spawnSpaceshipDelay = 20f;
+    public float spaceshipMinSpawnRange = 1000f;
+    public int maxSpaceshipsSpawn = 20;
+    public float spawnSpaceshipDelay = 3f;
+    [Range(0, 1)]
+    public float enemyAggroPlayerRate = 0.6f;
 
     private static SpaceshipManager singleton = null;
     private List<Spaceship> spaceshipSpawned = new List<Spaceship>();
@@ -69,7 +71,7 @@ public class SpaceshipManager : MonoBehaviour
             }
             else
             {
-                bool aggroPlayer = Random.Range(0f, 1f) >= 0.7f;
+                bool aggroPlayer = Random.Range(0f, 1f) <= singleton.enemyAggroPlayerRate;
                 Transform target = aggroPlayer ? Player.player.transform : alliesSpaceship[Random.Range(0, alliesSpaceship.Count)].transform;
                 newSpaceship.SetTarget(target);
             }

@@ -4,11 +4,13 @@ using UnityEngine;
 
 public abstract class Enemy : Spaceship
 {
-    public Transform anchorCanon;
     public Missile missilePrefab;
 
-    public void Shoot()
+    protected override void FaceTarget()
     {
-       Instantiate(missilePrefab.gameObject, anchorCanon.position, anchorCanon.rotation);
+        var targetDirection = target.position - transform.position;
+        var targetRotation = Quaternion.LookRotation(targetDirection);
+
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotateSpeed * Time.deltaTime);
     }
 }
