@@ -12,23 +12,23 @@ public abstract class Vehicle : MonoBehaviour
     public float decelaration;
 
     [SerializeField]
-    protected KeyCode leftAxis, rightAxis, upAxis, downAxis, button;
+    protected KeyCode leftAxis, rightAxis, upAxis, downAxis, button1, button2;
 
     protected VirtualInput vInput;
 
     protected virtual void Start()
     {
-        vInput = new VirtualInput(leftAxis, rightAxis, upAxis, downAxis, button);
+        vInput = new VirtualInput(leftAxis, rightAxis, upAxis, downAxis, button1, button2);
     }
 
     protected virtual void Update()
     {
-        if (vInput.ButtonPressed())
+        if (vInput.FirstButtonPressed())
         {
             Act();
         }
 
-        Move(vInput.GetInputs());
+        Move(vInput.GetAxis());
     }
 
     public abstract void Move(Vector3 dir);

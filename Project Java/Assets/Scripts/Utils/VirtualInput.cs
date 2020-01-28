@@ -2,18 +2,19 @@
 
 public class VirtualInput
 {
-    private KeyCode leftAxis, rightAxis, upAxis, downAxis, button;
+    private KeyCode leftAxis, rightAxis, upAxis, downAxis, button1, button2;
 
-    public VirtualInput(KeyCode leftAxis, KeyCode rightAxis, KeyCode upAxis, KeyCode downAxis, KeyCode button)
+    public VirtualInput(KeyCode leftAxis, KeyCode rightAxis, KeyCode upAxis, KeyCode downAxis, KeyCode button1, KeyCode button2)
     {
         this.leftAxis = leftAxis;
         this.rightAxis = rightAxis;
         this.upAxis = upAxis;
         this.downAxis = downAxis;
-        this.button = button;
+        this.button1 = button1;
+        this.button2 = button2;
     }
 
-    public Vector3 GetInputs()
+    public Vector3 GetAxis()
     {
         Vector3 dir = Vector3.zero;
 
@@ -25,8 +26,13 @@ public class VirtualInput
         return dir;
     }
 
-    public bool ButtonPressed()
+    public bool FirstButtonPressed()
     {
-        return Input.GetKeyDown(button);
+        return Input.GetKeyDown(button1);
+    }
+
+    public bool SecondButtonPressed()
+    {
+        return Input.GetKeyDown(button2);
     }
 }

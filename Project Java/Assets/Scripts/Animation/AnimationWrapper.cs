@@ -8,6 +8,8 @@ public class AnimationWrapper : MonoBehaviour
     private Animator[] animators;
     private static AnimationWrapper singleton;
 
+    public GameObject[] objectsToActivate;
+
     private void Start()
     {
         animators = transform.GetComponentsInChildren<Animator>();
@@ -18,6 +20,7 @@ public class AnimationWrapper : MonoBehaviour
     public static void StartAnimation(string animatorName, string animationName)
     {
         bool animatorFound = false;
+
         // use the name of animators gameobjects to find the right animator then play the animation with name ''
         foreach (Animator animator in singleton.animators)
         {
@@ -32,8 +35,13 @@ public class AnimationWrapper : MonoBehaviour
             Debug.Log(animatorName + " n'a pas été trouvé");
     }
 
-    public static void EnableUI()
+    public static void StartLevel()
     {
         singleton.UI.SetActive(true);
+
+        foreach (GameObject obj in singleton.objectsToActivate)
+        {
+            obj.SetActive(true);
+        }
     }
 }

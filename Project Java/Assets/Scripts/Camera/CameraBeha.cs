@@ -22,6 +22,9 @@ public class CameraBeha : MonoBehaviour
 
     private void Update()
     {
+        // TODO camera zooming out when accelerating
+        // TODO camera moving when rotating forward
+
         //transform.position = Vector3.Lerp(anchorTransform.position + recoil, anchorTransform.position + recoil - transform.forward * recoilFactor, player.player1.ForwardSpeed / player.player1.maxForwardSpeed);
 
         //shake.isEnabled = player.player1.ForwardSpeed / player.player1.maxForwardSpeed > shakeSpeedRatio;

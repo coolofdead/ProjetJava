@@ -63,7 +63,8 @@
     <Compile Include="Assets\Scripts\Animation\AnimationWrapper.cs" />
     <Compile Include="Assets\Scripts\Animation\EventAnimation.cs" />
     <Compile Include="Assets\Scripts\Asteroid.cs" />
-    <Compile Include="Assets\Scripts\CameraBeha.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraBeha.cs" />
+    <Compile Include="Assets\Scripts\Camera\LagCamera.cs" />
     <Compile Include="Assets\Scripts\FXAA\Antialiasing.cs" />
     <Compile Include="Assets\Scripts\FXAA\PostEffectsBase.cs" />
     <Compile Include="Assets\Scripts\FXAA\PostEffectsHelper.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="Assets\Scripts\UI\TurretGoal.cs" />
     <Compile Include="Assets\Scripts\UI\YwingShield.cs" />
     <Compile Include="Assets\Scripts\Utils\CameraShake.cs" />
+    <Compile Include="Assets\Scripts\Utils\DestroyAfter.cs" />
     <Compile Include="Assets\Scripts\Utils\Rotate.cs" />
     <Compile Include="Assets\Scripts\Utils\VirtualInput.cs" />
     <Compile Include="Assets\Scripts\Utils\Volumetric\Utils\TransformExtensionMethods.cs" />

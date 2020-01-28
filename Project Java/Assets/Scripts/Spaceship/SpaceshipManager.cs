@@ -7,7 +7,7 @@ public class SpaceshipManager : MonoBehaviour
 {
     [SerializeField]
     private Spaceship[] spaceships;
-    public float spaceshipMinSpawnRange = 20f;
+    public float spaceshipMinSpawnRange = 500f;
     public int maxSpaceshipsSpawn = 15;
     public float spawnSpaceshipDelay = 20f;
 
@@ -23,7 +23,6 @@ public class SpaceshipManager : MonoBehaviour
             SpawnSpaceship();
 
         InvokeRepeating("SpawnSpaceship", 0, spawnSpaceshipDelay);
-        InvokeRepeating("ClearSpaceshipSpawned", 0, 1f);
     }
 
     private void ClearSpaceshipSpawned()
@@ -33,6 +32,7 @@ public class SpaceshipManager : MonoBehaviour
 
     private void SpawnSpaceship()
     {
+        ClearSpaceshipSpawned();
         if (this.spaceshipSpawned.Count >= maxSpaceshipsSpawn)
             return;
 
@@ -50,7 +50,7 @@ public class SpaceshipManager : MonoBehaviour
             );
 
         int nb = Random.Range(0, spaceshipsFound.Count);
-        Vector3 pos = Random.insideUnitSphere * maxSpaceshipsSpawn;
+        Vector3 pos = Random.insideUnitSphere * spaceshipMinSpawnRange;
         var spaceshipSpawned = Instantiate(spaceshipsFound[nb], Player.player.transform.position + pos, Quaternion.identity);
 
         this.spaceshipSpawned.Add(spaceshipSpawned);
@@ -59,6 +59,7 @@ public class SpaceshipManager : MonoBehaviour
 
     public static void SetSpaceshipTarget(Spaceship newSpaceship)
     {
+        singleton.ClearSpaceshipSpawned();
         if (newSpaceship is Enemy)
         {
             var alliesSpaceship = singleton.spaceshipSpawned.FindAll(spaceship => spaceship is Allied);
