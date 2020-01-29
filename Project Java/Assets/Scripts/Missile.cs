@@ -8,6 +8,7 @@ public class Missile : MonoBehaviour
 
     [SerializeField]
     private bool isAlliedMissile;
+    public bool isFromPlayer = false;
 
     private void Start()
     {

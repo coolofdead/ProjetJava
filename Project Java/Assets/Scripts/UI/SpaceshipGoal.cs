@@ -5,21 +5,23 @@ using System.Linq;
 
 public class SpaceshipGoal : AbstractGoal
 {
-    [SerializeField]
-    private GameObject[] spaceships;
+    private int nbSpaceshipDestroyed;
 
     public override void Display()
     {
-        int nbSpaceshipsDestroyed = spaceships.Count(spaceship => !spaceship.activeSelf);
+        int numberToPrint = nbSpaceshipDestroyed > numberRequired ? numberRequired : nbSpaceshipDestroyed;
 
-        text.text = $"Destroy {nbSpaceshipsDestroyed} / {spaceships.Length} Spaceships";
+        text.text = $"Destroy {numberToPrint} / {numberRequired} Spaceships";
         text.color = IsCompleted() ? completed : uncompleted;
     }
 
     public override bool IsCompleted()
     {
-        bool isCompleted = spaceships.All(spaceship => !spaceship.activeSelf);
+        return nbSpaceshipDestroyed >= numberRequired;
+    }
 
-        return isCompleted;
+    public override void Notify(GoalItem item)
+    {
+        nbSpaceshipDestroyed++;
     }
 }

@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\Spaceship\TriFighter.cs" />
     <Compile Include="Assets\Scripts\UI\AbstractGoal.cs" />
     <Compile Include="Assets\Scripts\UI\Goal.cs" />
+    <Compile Include="Assets\Scripts\UI\GoalItem.cs" />
     <Compile Include="Assets\Scripts\UI\MenuUI.cs" />
     <Compile Include="Assets\Scripts\UI\ShieldGoal.cs" />
     <Compile Include="Assets\Scripts\UI\SpaceshipGoal.cs" />

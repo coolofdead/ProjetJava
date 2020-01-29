@@ -5,21 +5,19 @@ using System.Linq;
 
 public class TurretGoal : AbstractGoal
 {
-    [SerializeField]
-    private GameObject[] turrets;
-
     public override void Display()
     {
-        int nbTurretDestroyed = turrets.Count(turret => !turret.activeSelf);
+        int nbTurretDestroyed = goalItems.Count(turret => !turret.gameObject.activeSelf);
+        int numberToPrint = nbTurretDestroyed > numberRequired ? numberRequired : nbTurretDestroyed;
 
-        text.text = $"Destroy {nbTurretDestroyed} / {turrets.Length} Turrets";
+        text.text = $"Destroy {numberToPrint} / {numberRequired} Turrets";
         text.color = IsCompleted() ? completed : uncompleted;
     }
 
     public override bool IsCompleted()
     {
-        bool isCompleted = turrets.All(turret => !turret.activeSelf);
+        int nbDestroyed = goalItems.Count(turret => !turret.gameObject.activeSelf);
 
-        return isCompleted;
+        return nbDestroyed >= numberRequired;
     }
 }

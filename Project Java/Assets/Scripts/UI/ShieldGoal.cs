@@ -5,21 +5,19 @@ using System.Linq;
 
 public class ShieldGoal : AbstractGoal
 {
-    [SerializeField]
-    private GameObject[] shields;
-
     public override void Display()
     {
-        int nbShieldDestroyed = shields.Count(shield => !shield.activeSelf);
+        int nbShieldDestroyed = goalItems.Count(shield => !shield.gameObject.activeSelf);
+        int numberToPrint = nbShieldDestroyed > numberRequired ? numberRequired : nbShieldDestroyed;
 
-        text.text = $"Destroy {nbShieldDestroyed} / {shields.Length} Shields";
+        text.text = $"Destroy {numberToPrint} / {numberRequired} Shields";
         text.color = IsCompleted() ? completed : uncompleted;
     }
 
     public override bool IsCompleted()
     {
-        bool isCompleted = shields.All(shield => !shield.activeSelf);
+        int nbDestroyed = goalItems.Count(shield => !shield.gameObject.activeSelf);
 
-        return isCompleted;
+        return nbDestroyed >= numberRequired;
     }
 }

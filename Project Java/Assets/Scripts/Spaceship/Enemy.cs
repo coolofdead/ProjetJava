@@ -13,4 +13,11 @@ public abstract class Enemy : Spaceship
 
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotateSpeed * Time.deltaTime);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Player p = collision.gameObject.GetComponent<Player>();
+        if (p != null)
+            p.TakeDamage(1);
+    }
 }

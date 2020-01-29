@@ -146,3 +146,4 @@ MonoBehaviour:
   damage: 1
   lifeTime: 10
   isAlliedMissile: 0
+  isFromPlayer: 0

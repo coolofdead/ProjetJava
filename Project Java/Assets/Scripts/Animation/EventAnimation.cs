@@ -12,8 +12,6 @@ public class EventAnimation : MonoBehaviour
         string animatorName = animatorAndAnimationName.Split(stringSeparator)[0];
         string animationName = animatorAndAnimationName.Split(stringSeparator)[1];
 
-        Debug.Log(animatorName + " / " + animationName);
-
         AnimationWrapper.StartAnimation(animatorName, animationName);
     }
 

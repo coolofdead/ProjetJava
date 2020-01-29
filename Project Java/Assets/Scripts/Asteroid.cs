@@ -7,6 +7,7 @@ public class Asteroid : MonoBehaviour, IDamageable
     private Vector3 rotateDir;
     private const float minRotateSpeed = 5f;
     private const float maxRotateSpeed = 40f;
+    [SerializeField]
     private int life = 1;
 
     private void Start()
@@ -21,6 +22,16 @@ public class Asteroid : MonoBehaviour, IDamageable
 
     public void TakeDamage(int amount, bool instantKill = false)
     {
-        Destroy(gameObject);
+        life -= instantKill ? life : amount;
+
+        if (life <= 0)
+            Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Player p = other.gameObject.GetComponent<Player>();
+        if (p != null)
+            p.TakeDamage(life);
     }
 }

@@ -201,6 +201,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 644023505}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -271,18 +281,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.069988735
       objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: -5742016716225240515, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 4064179475565541718, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 5589430146972203068, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
 --- !u!4 &54441886 stripped
 Transform:
@@ -738,6 +741,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 644023505}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -808,18 +821,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.069988735
       objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: -5742016716225240515, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 4064179475565541718, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 5589430146972203068, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
 --- !u!4 &145220338 stripped
 Transform:
@@ -1085,6 +1091,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 22.398998
       objectReference: {fileID: 0}
+    - target: {fileID: 4927231468753150221, guid: 497e67593160869449875d30de398c36,
+        type: 3}
+      propertyPath: life
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 497e67593160869449875d30de398c36, type: 3}
 --- !u!4 &219918888 stripped
@@ -1216,10 +1227,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498e34cdb95e19e4a8f92fe1351c4bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numberRequired: 6
   text: {fileID: 305373527}
   completed: {r: 0, g: 1, b: 0, a: 1}
   uncompleted: {r: 1, g: 0, b: 0, a: 1}
-  spaceships: []
+  type: 2
 --- !u!1001 &231852812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1227,6 +1239,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 84145624}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1297,18 +1319,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.069988735
       objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: -5742016716225240515, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 4064179475565541718, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 5589430146972203068, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
 --- !u!4 &231852813 stripped
 Transform:
@@ -1323,6 +1338,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 105491158}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1393,18 +1418,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.069988735
       objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: -5742016716225240515, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 4064179475565541718, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 5589430146972203068, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
 --- !u!4 &265099475 stripped
 Transform:
@@ -1552,6 +1570,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927231468753150221, guid: 497e67593160869449875d30de398c36,
+        type: 3}
+      propertyPath: life
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 497e67593160869449875d30de398c36, type: 3}
@@ -1910,6 +1933,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 644023505}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1980,18 +2013,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.069988735
       objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: -5742016716225240515, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 4064179475565541718, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 5589430146972203068, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
 --- !u!4 &323650580 stripped
 Transform:
@@ -2224,6 +2250,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 36.174377
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927231468753150221, guid: 497e67593160869449875d30de398c36,
+        type: 3}
+      propertyPath: life
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 497e67593160869449875d30de398c36, type: 3}
@@ -3371,6 +3402,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 105491158}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3441,18 +3482,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.069988735
       objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: -5742016716225240515, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 4064179475565541718, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 5589430146972203068, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
 --- !u!4 &602296507 stripped
 Transform:
@@ -4086,6 +4120,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 36.17438
       objectReference: {fileID: 0}
+    - target: {fileID: 4927231468753150221, guid: 497e67593160869449875d30de398c36,
+        type: 3}
+      propertyPath: life
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 497e67593160869449875d30de398c36, type: 3}
 --- !u!4 &754665944 stripped
@@ -4170,6 +4209,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 22.398998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927231468753150221, guid: 497e67593160869449875d30de398c36,
+        type: 3}
+      propertyPath: life
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 497e67593160869449875d30de398c36, type: 3}
@@ -4270,6 +4314,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 6839318893370782872, guid: 9832c789de18b584bb6d369f15c9993c,
+        type: 3}
+      propertyPath: life
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9832c789de18b584bb6d369f15c9993c, type: 3}
@@ -4508,6 +4557,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 644023505}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4578,18 +4637,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.069988735
       objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: -5742016716225240515, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 4064179475565541718, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 5589430146972203068, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
 --- !u!4 &797786132 stripped
 Transform:
@@ -4883,6 +4935,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.81
       objectReference: {fileID: 0}
+    - target: {fileID: 6839318893370782872, guid: 9832c789de18b584bb6d369f15c9993c,
+        type: 3}
+      propertyPath: life
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9832c789de18b584bb6d369f15c9993c, type: 3}
 --- !u!4 &880939717 stripped
@@ -5084,6 +5141,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 36.174385
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927231468753150221, guid: 497e67593160869449875d30de398c36,
+        type: 3}
+      propertyPath: life
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 497e67593160869449875d30de398c36, type: 3}
@@ -5335,6 +5397,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.81
       objectReference: {fileID: 0}
+    - target: {fileID: 6839318893370782872, guid: 9832c789de18b584bb6d369f15c9993c,
+        type: 3}
+      propertyPath: life
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9832c789de18b584bb6d369f15c9993c, type: 3}
 --- !u!4 &1089792690 stripped
@@ -5569,6 +5636,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 36.17438
       objectReference: {fileID: 0}
+    - target: {fileID: 4927231468753150221, guid: 497e67593160869449875d30de398c36,
+        type: 3}
+      propertyPath: life
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 497e67593160869449875d30de398c36, type: 3}
 --- !u!4 &1146427568 stripped
@@ -5764,6 +5836,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 644023505}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5834,18 +5916,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.069988735
       objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: -5742016716225240515, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 4064179475565541718, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 5589430146972203068, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
 --- !u!4 &1163599684 stripped
 Transform:
@@ -5860,6 +5935,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 84145624}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5930,18 +6015,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.069988735
       objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: -5742016716225240515, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 4064179475565541718, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 5589430146972203068, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
 --- !u!4 &1176055566 stripped
 Transform:
@@ -6529,6 +6607,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 84145624}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6599,18 +6687,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.069988735
       objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: -5742016716225240515, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 4064179475565541718, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 5589430146972203068, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
 --- !u!4 &1442325741 stripped
 Transform:
@@ -6667,11 +6748,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6996f6b570ef144b4dde980323659f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numberRequired: 2
   text: {fileID: 288085011}
   completed: {r: 0, g: 1, b: 0, a: 1}
   uncompleted: {r: 1, g: 0, b: 0, a: 1}
-  shields:
-  - {fileID: 633765637}
+  type: 1
 --- !u!1001 &1480011864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7300,6 +7381,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.81
       objectReference: {fileID: 0}
+    - target: {fileID: 6839318893370782872, guid: 9832c789de18b584bb6d369f15c9993c,
+        type: 3}
+      propertyPath: life
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9832c789de18b584bb6d369f15c9993c, type: 3}
 --- !u!4 &1559310674 stripped
@@ -7315,6 +7401,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 105491158}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7385,18 +7481,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.069988735
       objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: -5742016716225240515, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 4064179475565541718, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 5589430146972203068, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
 --- !u!4 &1562433918 stripped
 Transform:
@@ -7411,6 +7500,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 105491158}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter
+      objectReference: {fileID: 0}
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7481,18 +7580,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.069988735
       objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: -5742016716225240515, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 4064179475565541718, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 5589430146972203068, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
 --- !u!4 &1581919205 stripped
 Transform:
@@ -7581,6 +7673,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 36.174385
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927231468753150221, guid: 497e67593160869449875d30de398c36,
+        type: 3}
+      propertyPath: life
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 497e67593160869449875d30de398c36, type: 3}
@@ -7681,6 +7778,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 6839318893370782872, guid: 9832c789de18b584bb6d369f15c9993c,
+        type: 3}
+      propertyPath: life
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9832c789de18b584bb6d369f15c9993c, type: 3}
@@ -8063,6 +8165,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.81
       objectReference: {fileID: 0}
+    - target: {fileID: 6839318893370782872, guid: 9832c789de18b584bb6d369f15c9993c,
+        type: 3}
+      propertyPath: life
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9832c789de18b584bb6d369f15c9993c, type: 3}
 --- !u!4 &1697968865 stripped
@@ -8439,6 +8546,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 84145624}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8509,18 +8626,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.069988735
       objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: -5742016716225240515, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 4064179475565541718, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+    - {fileID: 5589430146972203068, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
 --- !u!4 &1797326473 stripped
 Transform:
@@ -8772,9 +8882,10 @@ MonoBehaviour:
   - {fileID: -5636723222852504359, guid: 89c0f0895240bec4bbd625303151beba, type: 3}
   - {fileID: 5772997200622732439, guid: 96b852061a449ed4e8cce9feb81d2f22, type: 3}
   - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
-  spaceshipMinSpawnRange: 100
-  maxSpaceshipsSpawn: 15
-  spawnSpaceshipDelay: 20
+  spaceshipMinSpawnRange: 1000
+  maxSpaceshipsSpawn: 40
+  spawnSpaceshipDelay: 3
+  enemyAggroPlayerRate: 0.2
 --- !u!1001 &1879495143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8866,6 +8977,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 6839318893370782872, guid: 9832c789de18b584bb6d369f15c9993c,
+        type: 3}
+      propertyPath: life
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9832c789de18b584bb6d369f15c9993c, type: 3}
@@ -9121,12 +9237,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5043dfb50dd35b478e808292648d076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numberRequired: 2
   text: {fileID: 818176043}
   completed: {r: 0, g: 1, b: 0, a: 1}
   uncompleted: {r: 1, g: 0, b: 0, a: 1}
-  turrets:
-  - {fileID: 105491157}
-  - {fileID: 644023504}
+  type: 0
 --- !u!1 &2083139626
 GameObject:
   m_ObjectHideFlags: 0

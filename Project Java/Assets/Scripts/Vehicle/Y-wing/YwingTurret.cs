@@ -11,7 +11,7 @@ public class YwingTurret : Vehicle
     public float shotInterval;
     private bool isReloading;
 
-    private bool isOddSide;
+    private bool isOddSide = false;
 
     public override void Act()
     {
@@ -19,7 +19,9 @@ public class YwingTurret : Vehicle
             return;
 
         Transform canonAnchor = isOddSide ? canonDroit : canonGauche;
-        Instantiate(missilePrefab, canonAnchor.position, Quaternion.identity).transform.LookAt(canonAnchor.position + canonAnchor.forward);
+        GameObject g = Instantiate(missilePrefab, canonAnchor.position, Quaternion.identity);
+        g.transform.LookAt(canonAnchor.position + canonAnchor.forward);
+        g.GetComponent<Missile>().isFromPlayer = true;
 
         isOddSide = !isOddSide;
 

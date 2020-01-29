@@ -6,6 +6,7 @@ public abstract class Spaceship : MonoBehaviour, IDamageable
 {
     [SerializeField]
     protected float life;
+    public float Life { get { return life; } }
     public float maxSpeed = 8;
     protected float speed = 8;
 
