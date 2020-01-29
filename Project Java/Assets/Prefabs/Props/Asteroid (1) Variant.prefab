@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 6839318893370782873, guid: 9832c789de18b584bb6d369f15c9993c,
         type: 3}
       propertyPath: m_Name
-      value: Asteroid (1)
+      value: Asteroid (1) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7543948929582057098, guid: 9832c789de18b584bb6d369f15c9993c,
         type: 3}
@@ -82,5 +82,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5.430782
       objectReference: {fileID: 0}
+    - target: {fileID: 8340033297798573457, guid: 9832c789de18b584bb6d369f15c9993c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c18ce177d0ee18449af1f84acfeb76c0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9832c789de18b584bb6d369f15c9993c, type: 3}

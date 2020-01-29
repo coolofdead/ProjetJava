@@ -11,22 +11,26 @@ public class CameraBeha : MonoBehaviour
     public float recoilFactor;
     [Range(0, 1)]
     public float shakeSpeedRatio;
-    private Transform anchorTransform;
-    public Vector3 recoil;
+
+    public Transform anchor;
+    public float minDist = 55f;
+    public float yOffset = 20f;
 
     private void Start()
     {
         shake = GetComponent<CameraShake>();
-        anchorTransform = transform.parent;
     }
 
     private void Update()
     {
-        // TODO camera zooming out when accelerating
-        // TODO camera moving when rotating forward
+        transform.position = Vector3.Lerp(
+            anchor.position + -transform.forward * minDist,
+            anchor.position + -transform.forward * minDist + -transform.forward * recoilFactor,
+            player.player1.ForwardSpeed / player.player1.maxForwardSpeed);
 
-        //transform.position = Vector3.Lerp(anchorTransform.position + recoil, anchorTransform.position + recoil - transform.forward * recoilFactor, player.player1.ForwardSpeed / player.player1.maxForwardSpeed);
+        transform.position += new Vector3(0, yOffset, 0);
 
-        //shake.isEnabled = player.player1.ForwardSpeed / player.player1.maxForwardSpeed > shakeSpeedRatio;
+        shake.isEnabled = player.player1.ForwardSpeed / player.player1.maxForwardSpeed > shakeSpeedRatio;
+        shake.shakeAmount = Mathf.Lerp(shake.shakeAmount, shake.maxShake, player.player1.ForwardSpeed / player.player1.maxForwardSpeed);
     }
 }

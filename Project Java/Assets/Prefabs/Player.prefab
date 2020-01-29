@@ -492,9 +492,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 6192225102526633860}
-  recoilFactor: 14
-  shakeSpeedRatio: 0.9
-  recoil: {x: 0, y: 0, z: 0}
+  recoilFactor: 10
+  shakeSpeedRatio: 0.7
+  anchor: {fileID: 3357764356390790038}
+  minDist: 55
+  yOffset: 20
 --- !u!114 &1709248790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,7 +509,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91aa2b6f7a0bb3f49b4a8ee348a3f12b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeAmount: 0.7
+  shakeAmount: 0.01
+  maxShake: 0.1
   isEnabled: 0
 --- !u!1 &6192225102526633857
 GameObject:
@@ -588,9 +591,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxForwardSpeed: 48
-  minForwardSpeed: 40
+  minForwardSpeed: 22
   acceleration: 30
-  decelaration: 14
+  decelaration: 16
   leftAxis: 113
   rightAxis: 100
   upAxis: 122

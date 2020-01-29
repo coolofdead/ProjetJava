@@ -5,29 +5,24 @@ using UnityEngine.UI;
 
 public class YwingShield : MonoBehaviour
 {
-    public Shield yWingShield;
-    public Image shieldBar;
-
-    public Color warningColor;
-    public Color regeneratingShieldColor;
-    private Color defaultColor;
-
-    public GameObject warning;
-
-    private void Start()
-    {
-        defaultColor = shieldBar.color;
-    }
+    public Shield shield;
+    public Image shieldDisabled;
+    public Image shieldOverHeating;
+    public Text countdown;
 
     void Update()
     {
-        float amount = yWingShield.ActifTimeLeft / yWingShield.recoveryTime;
-        shieldBar.fillAmount = amount;
+        shieldDisabled.gameObject.SetActive(shield.IsRecovering);
+        countdown.gameObject.SetActive(shield.IsRecovering);
 
-        shieldBar.color = amount < 0.3f ? warningColor : defaultColor;
-        if (yWingShield.IsRecovering)
-            shieldBar.color = regeneratingShieldColor;
+        shieldOverHeating.fillAmount = 1 - shield.ActifTimeLeft / shield.recoveryTime;
 
-        warning.SetActive(amount < 0.2f);
+        if (!shield.IsRecovering)
+            return;
+
+        float amount =  1 - shield.ActifTimeLeft / shield.recoveryTime;
+        shieldDisabled.fillAmount = amount;
+
+        countdown.text = (shield.recoveryTime - shield.ActifTimeLeft).ToString("0");
     }
 }
