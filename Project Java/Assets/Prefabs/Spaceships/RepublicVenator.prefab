@@ -171,6 +171,66 @@ Transform:
   m_Father: {fileID: 1232225844913301240}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &253378367501893639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9137388324312721562}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9137388324312721562
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253378367501893639}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1045258097608516375}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &542787340549738840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1309108206809855760}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1309108206809855760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542787340549738840}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2565947304273601034}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &754143908361155178
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +487,36 @@ Transform:
   m_Father: {fileID: 5052270127173219803}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1937160004301713099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8789563452908007696}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8789563452908007696
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937160004301713099}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2072709433710343181}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &2250866824318806950
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +578,36 @@ Transform:
   m_Father: {fileID: 746871437039714180}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2799493237772056418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6574276322694832637}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6574276322694832637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2799493237772056418}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1232225844913301240}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &2848144834812809097
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,6 +647,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2565947304273601034}
+  - component: {fileID: 1184879941466757175}
   m_Layer: 0
   m_Name: turretD2_part1
   m_TagString: Untagged
@@ -546,9 +667,60 @@ Transform:
   m_LocalScale: {x: 3.2347682, y: 3.2347674, z: 3.2347674}
   m_Children:
   - {fileID: 5052270127173219803}
+  - {fileID: 1309108206809855760}
   m_Father: {fileID: 6281434731170126993}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1184879941466757175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3112655167068829355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10dcf8ae2f1010042a630fe7161099b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missilePrefab: {fileID: 8310372900844087463, guid: 31a0a67f13ee56a4e8602b61512f2268,
+    type: 3}
+  canonAnchors:
+  - {fileID: 1309108206809855760}
+  gustDelay: 3
+  maxGustDelay: 7
+  shotPerGust: 4
+  shotDelay: 3
+--- !u!1 &3256083814437696986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8204844056775119549}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8204844056775119549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3256083814437696986}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2324133244765452602}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &4212522478835381545
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,6 +828,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2072709433710343181}
+  - component: {fileID: 1556365850850263972}
   m_Layer: 0
   m_Name: turretA2_part1
   m_TagString: Untagged
@@ -675,9 +848,30 @@ Transform:
   m_LocalScale: {x: 3.2347682, y: 3.2347674, z: 3.2347672}
   m_Children:
   - {fileID: 8103661029658011378}
+  - {fileID: 8789563452908007696}
   m_Father: {fileID: 6281434731170126993}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1556365850850263972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4243637577226737939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10dcf8ae2f1010042a630fe7161099b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missilePrefab: {fileID: 8310372900844087463, guid: 31a0a67f13ee56a4e8602b61512f2268,
+    type: 3}
+  canonAnchors:
+  - {fileID: 8789563452908007696}
+  gustDelay: 3
+  maxGustDelay: 7
+  shotPerGust: 4
+  shotDelay: 3
 --- !u!1 &4357532452072254586
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +942,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1758183003016339549}
+  - component: {fileID: 3108912280135821615}
   m_Layer: 0
   m_Name: turretC2_part1
   m_TagString: Untagged
@@ -767,9 +962,30 @@ Transform:
   m_LocalScale: {x: 3.2347682, y: 3.2347674, z: 3.2347674}
   m_Children:
   - {fileID: 3654665005242992569}
+  - {fileID: 5893071492686984471}
   m_Father: {fileID: 6281434731170126993}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3108912280135821615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4874263513477547808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10dcf8ae2f1010042a630fe7161099b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missilePrefab: {fileID: 8310372900844087463, guid: 31a0a67f13ee56a4e8602b61512f2268,
+    type: 3}
+  canonAnchors:
+  - {fileID: 5893071492686984471}
+  gustDelay: 3
+  maxGustDelay: 7
+  shotPerGust: 4
+  shotDelay: 3
 --- !u!1 &5030020218384892540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 746871437039714180}
+  - component: {fileID: 4583238601374879658}
   m_Layer: 0
   m_Name: turretD1_part1
   m_TagString: Untagged
@@ -1117,9 +1334,30 @@ Transform:
   m_LocalScale: {x: 3.2347682, y: 3.2347674, z: 3.2347674}
   m_Children:
   - {fileID: 9053903542681355898}
+  - {fileID: 8053690841458428868}
   m_Father: {fileID: 6281434731170126993}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4583238601374879658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5754913722133375676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10dcf8ae2f1010042a630fe7161099b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missilePrefab: {fileID: 8310372900844087463, guid: 31a0a67f13ee56a4e8602b61512f2268,
+    type: 3}
+  canonAnchors:
+  - {fileID: 8053690841458428868}
+  gustDelay: 3
+  maxGustDelay: 7
+  shotPerGust: 4
+  shotDelay: 3
 --- !u!1 &6014868804456467920
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,6 +1396,36 @@ Transform:
   m_Father: {fileID: 3917989119703232255}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6023820190148787633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8393140963656514664}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8393140963656514664
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6023820190148787633}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5191233673880542801}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &6295092123727541674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,6 +1524,36 @@ SkinnedMeshRenderer:
     m_Center: {x: 43.990257, y: 20.603312, z: 11.635021}
     m_Extent: {x: 3.3680649, y: 3.6818962, z: 1.5601568}
   m_DirtyAABB: 0
+--- !u!1 &6306978522870353369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8053690841458428868}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8053690841458428868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6306978522870353369}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 746871437039714180}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &6441750623303523342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,6 +1563,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1232225844913301240}
+  - component: {fileID: 365638082636837187}
   m_Layer: 0
   m_Name: turretB1_part1
   m_TagString: Untagged
@@ -1284,9 +1583,30 @@ Transform:
   m_LocalScale: {x: 3.234768, y: 3.2347674, z: 3.2347674}
   m_Children:
   - {fileID: 6816843630320479457}
+  - {fileID: 6574276322694832637}
   m_Father: {fileID: 6281434731170126993}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &365638082636837187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6441750623303523342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10dcf8ae2f1010042a630fe7161099b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missilePrefab: {fileID: 8310372900844087463, guid: 31a0a67f13ee56a4e8602b61512f2268,
+    type: 3}
+  canonAnchors:
+  - {fileID: 6574276322694832637}
+  gustDelay: 3
+  maxGustDelay: 7
+  shotPerGust: 4
+  shotDelay: 3
 --- !u!1 &6472151734530024875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,6 +1616,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5191233673880542801}
+  - component: {fileID: 3377537445167433106}
   m_Layer: 0
   m_Name: turretA1_part1
   m_TagString: Untagged
@@ -1315,9 +1636,30 @@ Transform:
   m_LocalScale: {x: 3.2347682, y: 3.2347674, z: 3.2347674}
   m_Children:
   - {fileID: 748838941499181909}
+  - {fileID: 8393140963656514664}
   m_Father: {fileID: 6281434731170126993}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3377537445167433106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6472151734530024875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10dcf8ae2f1010042a630fe7161099b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missilePrefab: {fileID: 8310372900844087463, guid: 31a0a67f13ee56a4e8602b61512f2268,
+    type: 3}
+  canonAnchors:
+  - {fileID: 8393140963656514664}
+  gustDelay: 3
+  maxGustDelay: 7
+  shotPerGust: 4
+  shotDelay: 3
 --- !u!1 &6976357758701603006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,6 +1669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1045258097608516375}
+  - component: {fileID: 6474825231289628463}
   m_Layer: 0
   m_Name: turretC1_part1
   m_TagString: Untagged
@@ -1346,9 +1689,30 @@ Transform:
   m_LocalScale: {x: 3.234768, y: 3.2347677, z: 3.2347677}
   m_Children:
   - {fileID: 5152178836892754690}
+  - {fileID: 9137388324312721562}
   m_Father: {fileID: 6281434731170126993}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6474825231289628463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976357758701603006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10dcf8ae2f1010042a630fe7161099b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missilePrefab: {fileID: 8310372900844087463, guid: 31a0a67f13ee56a4e8602b61512f2268,
+    type: 3}
+  canonAnchors:
+  - {fileID: 9137388324312721562}
+  gustDelay: 3
+  maxGustDelay: 7
+  shotPerGust: 4
+  shotDelay: 3
 --- !u!1 &7048768893875066867
 GameObject:
   m_ObjectHideFlags: 0
@@ -1707,6 +2071,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2324133244765452602}
+  - component: {fileID: 4627970209835779682}
   m_Layer: 0
   m_Name: turretB2_part1
   m_TagString: Untagged
@@ -1726,9 +2091,30 @@ Transform:
   m_LocalScale: {x: 3.234768, y: 3.2347674, z: 3.2347674}
   m_Children:
   - {fileID: 5773261547301274476}
+  - {fileID: 8204844056775119549}
   m_Father: {fileID: 6281434731170126993}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4627970209835779682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7751033767437098335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10dcf8ae2f1010042a630fe7161099b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missilePrefab: {fileID: 8310372900844087463, guid: 31a0a67f13ee56a4e8602b61512f2268,
+    type: 3}
+  canonAnchors:
+  - {fileID: 8204844056775119549}
+  gustDelay: 3
+  maxGustDelay: 7
+  shotPerGust: 4
+  shotDelay: 3
 --- !u!1 &8032094602145021417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1759,3 +2145,33 @@ Transform:
   m_Father: {fileID: 5152178836892754690}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9161072689501054153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5893071492686984471}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5893071492686984471
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9161072689501054153}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1758183003016339549}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}

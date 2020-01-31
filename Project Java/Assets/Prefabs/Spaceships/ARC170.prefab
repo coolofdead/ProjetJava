@@ -218,7 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   life: 1
-  maxSpeed: 82
+  maxSpeed: 94
   rotateSpeed: 3
   angleShot: 5
   shotRange: 250

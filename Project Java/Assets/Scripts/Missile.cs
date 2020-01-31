@@ -28,22 +28,25 @@ public class Missile : MonoBehaviour
         {
             if (!isAlliedMissile)
             {
-                if (unit is Player || unit is Allied)
+                if (unit is Player || unit is Allied || unit is Shield)
                 {
                     unit.TakeDamage(damage);
+
+                    Destroy(gameObject);
                 }
             }
 
             if (isAlliedMissile)
             {
-                if (unit is Enemy)
+                if (unit is Enemy || unit is Turret || unit is EnemyShield)
                 {
                     GoalIndicatorManager.SetEnemyReference(other.transform);
                     unit.TakeDamage(damage);
+
+                    Destroy(gameObject);
+
                 }
             }
-
-            Destroy(gameObject);
         }
     }
 }

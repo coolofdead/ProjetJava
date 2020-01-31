@@ -209,6 +209,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 382688079755821486}
     m_Modifications:
+    - target: {fileID: 4858167409039938840, guid: 53e3c86acac569f4393a5c80025bdeeb,
+        type: 3}
+      propertyPath: m_Name
+      value: Geonosis Holo
+      objectReference: {fileID: 0}
     - target: {fileID: 8444517978311124747, guid: 53e3c86acac569f4393a5c80025bdeeb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -279,11 +284,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0040469645
       objectReference: {fileID: 0}
-    - target: {fileID: 4858167409039938840, guid: 53e3c86acac569f4393a5c80025bdeeb,
-        type: 3}
-      propertyPath: m_Name
-      value: Geonosis Holo
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53e3c86acac569f4393a5c80025bdeeb, type: 3}
 --- !u!1 &5054227643061147094 stripped
@@ -323,6 +323,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 382688079755821486}
     m_Modifications:
+    - target: {fileID: 1883010655584184066, guid: 6793553f2cadd2647b441c26ed132893,
+        type: 3}
+      propertyPath: m_Name
+      value: Corsucant Holo
+      objectReference: {fileID: 0}
     - target: {fileID: 3205038934761936145, guid: 6793553f2cadd2647b441c26ed132893,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -393,11 +398,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.00023169939
       objectReference: {fileID: 0}
-    - target: {fileID: 1883010655584184066, guid: 6793553f2cadd2647b441c26ed132893,
-        type: 3}
-      propertyPath: m_Name
-      value: Corsucant Holo
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6793553f2cadd2647b441c26ed132893, type: 3}
 --- !u!1 &2264845455996727118 stripped
@@ -425,6 +425,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 382688079755821486}
     m_Modifications:
+    - target: {fileID: 413387558979284183, guid: 7478e5786c3e475419575b0fb85a7a94,
+        type: 3}
+      propertyPath: m_Name
+      value: Naboo Holo
+      objectReference: {fileID: 0}
     - target: {fileID: 3740235176237620932, guid: 7478e5786c3e475419575b0fb85a7a94,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -495,11 +500,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0013304468
       objectReference: {fileID: 0}
-    - target: {fileID: 413387558979284183, guid: 7478e5786c3e475419575b0fb85a7a94,
-        type: 3}
-      propertyPath: m_Name
-      value: Naboo Holo
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7478e5786c3e475419575b0fb85a7a94, type: 3}
 --- !u!1 &68452349938563943 stripped
@@ -527,6 +527,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 382688079755821486}
     m_Modifications:
+    - target: {fileID: 5509200049702239773, guid: 143bc7e44303f0148a9fc8ed78cfd0e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Stars
+      objectReference: {fileID: 0}
     - target: {fileID: 5509200049702239770, guid: 143bc7e44303f0148a9fc8ed78cfd0e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -581,11 +586,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5509200049702239773, guid: 143bc7e44303f0148a9fc8ed78cfd0e7,
-        type: 3}
-      propertyPath: m_Name
-      value: Stars
       objectReference: {fileID: 0}
     - target: {fileID: 5509200049461013815, guid: 143bc7e44303f0148a9fc8ed78cfd0e7,
         type: 3}

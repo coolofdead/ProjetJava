@@ -332,9 +332,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 30
   life: 2
-  maxSpeed: 88
-  rotateSpeed: 2
-  angleShot: 10
+  maxSpeed: 104
+  rotateSpeed: 2.3
+  angleShot: 12
   shotRange: 180
   reloadTime: 1.3
   missilePrefab: {fileID: 5623991826525285357, guid: e068a0f87b8c5de408ec19644a48635d,

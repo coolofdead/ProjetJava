@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Asteroid.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraBeha.cs" />
     <Compile Include="Assets\Scripts\Camera\LagCamera.cs" />
+    <Compile Include="Assets\Scripts\EnemyShield.cs" />
     <Compile Include="Assets\Scripts\FXAA\Antialiasing.cs" />
     <Compile Include="Assets\Scripts\FXAA\PostEffectsBase.cs" />
     <Compile Include="Assets\Scripts\FXAA\PostEffectsHelper.cs" />

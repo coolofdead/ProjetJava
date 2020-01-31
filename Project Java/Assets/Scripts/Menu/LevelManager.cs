@@ -15,6 +15,11 @@ public class LevelManager : MonoBehaviour
     public Material enablePlanet;
     public Material disablePlanet;
 
+    private VirtualInput vInput = new VirtualInput(KeyCode.LeftArrow, KeyCode.RightArrow, KeyCode.UpArrow, KeyCode.DownArrow, KeyCode.Space, KeyCode.A);
+
+    private bool axisIsOnCd;
+    public float axisDelay = 0.2f;
+
     void Start()
     {
         planets = holoMap.GetComponentsInChildren<LevelPlanet>();
@@ -27,17 +32,21 @@ public class LevelManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
+        var inputAxis = vInput.GetAxis();
+
+        if (inputAxis.x != 0 && !axisIsOnCd)
         {
+            StartCoroutine(AxisDelay());
+
             planets[cursor].transform.localScale /= 2;
 
-            cursor += Input.GetKeyDown(KeyCode.LeftArrow) ? -1 : 1;
+            cursor += inputAxis.x < 0 ? -1 : 1;
             if (cursor < 0) cursor = planets.Length - 1;
             if (cursor == planets.Length) cursor = 0;
             SetCurrentLevel(planets[cursor]);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (vInput.FirstButtonPressed())
         {
             if (maxLevelReached >= cursor)
             {
@@ -52,5 +61,14 @@ public class LevelManager : MonoBehaviour
         levelSelected.transform.localScale *= 2;
 
         menu.UpdateLevel(levelSelected);
+    }
+
+    private IEnumerator AxisDelay()
+    {
+        axisIsOnCd = true;
+
+        yield return new WaitForSeconds(axisDelay);
+
+        axisIsOnCd = false;
     }
 }
