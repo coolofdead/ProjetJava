@@ -12,6 +12,8 @@ public class Player : MonoBehaviour, IDamageable
     public GameObject[] fireImpacts;
 
     public static Player player;
+    private int score;
+    public int Score { get { return score; } set { score = value; } }
 
     private void Awake()
     {

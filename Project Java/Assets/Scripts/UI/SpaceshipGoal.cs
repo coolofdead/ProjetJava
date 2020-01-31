@@ -11,7 +11,7 @@ public class SpaceshipGoal : AbstractGoal
     {
         int numberToPrint = nbSpaceshipDestroyed > numberRequired ? numberRequired : nbSpaceshipDestroyed;
 
-        text.text = $"Destroy {numberToPrint} / {numberRequired} Spaceships";
+        text.text = $"{numberToPrint} / {numberRequired}";
         text.color = IsCompleted() ? completed : uncompleted;
     }
 

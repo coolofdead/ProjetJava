@@ -10,7 +10,7 @@ public class ShieldGoal : AbstractGoal
         int nbShieldDestroyed = goalItems.Count(shield => !shield.gameObject.activeSelf);
         int numberToPrint = nbShieldDestroyed > numberRequired ? numberRequired : nbShieldDestroyed;
 
-        text.text = $"Destroy {numberToPrint} / {numberRequired} Shields";
+        text.text = $"{numberToPrint} / {numberRequired}";
         text.color = IsCompleted() ? completed : uncompleted;
     }
 

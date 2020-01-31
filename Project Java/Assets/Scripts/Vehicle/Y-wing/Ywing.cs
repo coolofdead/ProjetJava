@@ -19,7 +19,7 @@ public class Ywing : Vehicle
         base.Start();
 
         rbody = Player.player.gameObject.AddComponent<Rigidbody>();
-        rbody.angularDrag = 1.5f;
+        rbody.angularDrag = 3f;
         rbody.drag = 1f;
         rbody.useGravity = false;
     }

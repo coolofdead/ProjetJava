@@ -38,6 +38,7 @@ public class Missile : MonoBehaviour
             {
                 if (unit is Enemy)
                 {
+                    GoalIndicatorManager.SetEnemyReference(other.transform);
                     unit.TakeDamage(damage);
                 }
             }

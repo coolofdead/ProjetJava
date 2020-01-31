@@ -10,7 +10,7 @@ public class TurretGoal : AbstractGoal
         int nbTurretDestroyed = goalItems.Count(turret => !turret.gameObject.activeSelf);
         int numberToPrint = nbTurretDestroyed > numberRequired ? numberRequired : nbTurretDestroyed;
 
-        text.text = $"Destroy {numberToPrint} / {numberRequired} Turrets";
+        text.text = $"{numberToPrint} / {numberRequired}";
         text.color = IsCompleted() ? completed : uncompleted;
     }
 

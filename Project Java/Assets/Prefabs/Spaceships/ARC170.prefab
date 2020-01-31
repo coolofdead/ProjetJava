@@ -216,8 +216,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d49a05b7bccc6794c9e2833437e7d45a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
   life: 1
-  maxSpeed: 56
+  maxSpeed: 82
   rotateSpeed: 3
   angleShot: 5
   shotRange: 250

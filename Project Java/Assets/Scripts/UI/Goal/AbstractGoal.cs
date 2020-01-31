@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public abstract class AbstractGoal : MonoBehaviour
 {
     public int numberRequired;
+    protected bool isScoreGiven;
+    public int score;
 
     [SerializeField]
     protected Text text;
@@ -19,6 +21,15 @@ public abstract class AbstractGoal : MonoBehaviour
     public GoalType Type { get { return type; } }
 
     protected List<GoalItem> goalItems;
+
+    protected void Update()
+    {
+        if (IsCompleted() && !isScoreGiven)
+        {
+            isScoreGiven = true;
+            Player.player.Score += score;
+        }
+    }
 
     public void SetGameobjectsGoal(List<GoalItem> goalItems)  
     {

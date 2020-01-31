@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class Spaceship : MonoBehaviour, IDamageable
 {
+    public int score;
+
     [SerializeField]
     protected float life;
     public float Life { get { return life; } }
@@ -56,6 +58,8 @@ public abstract class Spaceship : MonoBehaviour, IDamageable
         life -= instantKill ? life : amount;
         if (life <= 0)
         {
+            if (this is Enemy)
+                Player.player.Score += score;
             Destroy(gameObject);
         }
     }

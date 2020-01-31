@@ -5,9 +5,8 @@ using UnityEngine;
 public class Asteroid : MonoBehaviour, IDamageable
 {
     private Vector3 rotateDir;
-    private const float minRotateSpeed = 5f;
-    private const float maxRotateSpeed = 40f;
-    [SerializeField]
+    private const float minRotateSpeed = 3f;
+    private const float maxRotateSpeed = 20f;
     private int life = 1;
 
     private void Start()
@@ -32,6 +31,8 @@ public class Asteroid : MonoBehaviour, IDamageable
     {
         Player p = other.gameObject.GetComponent<Player>();
         if (p != null)
-            p.TakeDamage(life);
+        {
+            p.TakeDamage(0, true);
+        }
     }
 }

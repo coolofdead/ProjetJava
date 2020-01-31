@@ -77,11 +77,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cf87c8d82a2bf84b88913b3907ee317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
   life: 2
-  maxSpeed: 50
-  rotateSpeed: 2.5
+  maxSpeed: 74
+  rotateSpeed: 2.3
   angleShot: 180
-  shotRange: 400
+  shotRange: 600
   reloadTime: 2.1
   missilePrefab: {fileID: 7396889829957288806, guid: 12ec3eea1eead794985643704d96f964,
     type: 3}

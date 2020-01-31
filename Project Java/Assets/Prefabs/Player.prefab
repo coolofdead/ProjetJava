@@ -298,8 +298,8 @@ MonoBehaviour:
     type: 3}
   canonDroit: {fileID: 226732359855616592}
   canonGauche: {fileID: 1779696924212938917}
-  rotateSpeed: 90
-  shotInterval: 0.25
+  rotateSpeed: 80
+  shotInterval: 0.17
 --- !u!1 &2162952996990984647
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,7 +573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 130041663518995284}
   player2: {fileID: 1718059817004842772}
-  life: 4
+  life: 3
   fireImpacts:
   - {fileID: 919133891034729830}
   - {fileID: 4827298452345266984}
@@ -590,10 +590,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc054c73c315c94488979cb14125dfb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxForwardSpeed: 48
-  minForwardSpeed: 22
-  acceleration: 30
-  decelaration: 16
+  maxForwardSpeed: 80
+  minForwardSpeed: 58
+  acceleration: 60
+  decelaration: 22
   leftAxis: 113
   rightAxis: 100
   upAxis: 122
@@ -604,7 +604,7 @@ MonoBehaviour:
   tiltRight: 15
   tiltLeft: -15
   shield: {fileID: 1769520912426425881}
-  angularForce: {x: 1.3, y: 1, z: 1.7}
+  angularForce: {x: 1.8, y: 1, z: 1.7}
 --- !u!1001 &343042497867814915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -863,6 +863,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Y-wing
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649044215087369257, guid: 4429f667f033a0f4590c3da96f18684b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649044215087369257, guid: 4429f667f033a0f4590c3da96f18684b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649044215087369257, guid: 4429f667f033a0f4590c3da96f18684b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -235
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193061665279637212, guid: 4429f667f033a0f4590c3da96f18684b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -28.599998
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193061665279637212, guid: 4429f667f033a0f4590c3da96f18684b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25.000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193061665279637212, guid: 4429f667f033a0f4590c3da96f18684b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -226.0001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4429f667f033a0f4590c3da96f18684b, type: 3}
