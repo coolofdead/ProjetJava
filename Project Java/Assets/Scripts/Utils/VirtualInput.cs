@@ -34,6 +34,11 @@ public class VirtualInput
         return Input.GetKeyDown(button1);
     }
 
+    public bool FirstButton()
+    {
+        return Input.GetKey(button1);
+    }
+
     public bool SecondButtonPressed()
     {
         return Input.GetKeyDown(button2);

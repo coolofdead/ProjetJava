@@ -6,11 +6,10 @@ public abstract class Spaceship : MonoBehaviour, IDamageable
 {
     public int score;
 
-    [SerializeField]
-    protected float life;
-    public float Life { get { return life; } }
-    public float maxSpeed = 8;
-    protected float speed = 8;
+    public int maxLife;
+    protected int life;
+    public int Life { get { return life; } }
+    public float speed = 8;
 
     public float rotateSpeed = 5f;
     public float angleShot = 5f;
@@ -21,17 +20,27 @@ public abstract class Spaceship : MonoBehaviour, IDamageable
     protected Transform target;
     public Transform Target { get { return target; } }
 
-    protected const float CLOSE_RANGE = 90f;
+    protected float closeDistance = 90f;
+    protected float distanceWithTarget;
+
+    void Start()
+    {
+        closeDistance = shotRange / 2;
+        life = maxLife;
+    }
 
     protected virtual void Update()
     {
+        if (OptionUI.isPaused)
+            return;
+
         if (target == null)
         {
             SpaceshipManager.SetSpaceshipTarget(this);
             return;
         }
 
-        var distanceWithTarget = Vector3.Distance(transform.position, target.position);
+        distanceWithTarget = Vector3.Distance(transform.position, target.position);
         if (distanceWithTarget <= shotRange
             && Vector3.Angle(transform.forward, target.position - transform.position) < angleShot
             && !isReloading)
@@ -39,7 +48,6 @@ public abstract class Spaceship : MonoBehaviour, IDamageable
             Shoot();
         }
 
-        speed = Mathf.Lerp(maxSpeed * 0.1f, maxSpeed, distanceWithTarget / shotRange);
         FaceTarget();
         Move();
     }

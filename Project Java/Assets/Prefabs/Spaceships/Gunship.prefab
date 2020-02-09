@@ -78,15 +78,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  life: 2
-  maxSpeed: 74
+  maxLife: 300
+  speed: 8
   rotateSpeed: 2.3
   angleShot: 180
   shotRange: 600
   reloadTime: 2.1
   missilePrefab: {fileID: 7396889829957288806, guid: 12ec3eea1eead794985643704d96f964,
     type: 3}
-  runAwayDuration: 7
+  runAwayDuration: 6
   distanceFromAlly: 150
   leftCanon: {fileID: 8792098883215592692}
   rightCanon: {fileID: 897813987414206611}

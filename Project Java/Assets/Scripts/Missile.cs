@@ -40,7 +40,7 @@ public class Missile : MonoBehaviour
             {
                 if (unit is Enemy || unit is Turret || unit is EnemyShield)
                 {
-                    GoalIndicatorManager.SetEnemyReference(other.transform);
+                    GoalIndicatorManager.SetEnemyReference(unit as Enemy);
                     unit.TakeDamage(damage);
 
                     Destroy(gameObject);

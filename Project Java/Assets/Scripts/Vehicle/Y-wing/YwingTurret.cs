@@ -13,6 +13,19 @@ public class YwingTurret : Vehicle
 
     private bool isOddSide = false;
 
+    protected override void Update()
+    {
+        if (OptionUI.isPaused)
+            return;
+
+        if (vInput.FirstButton())
+        {
+            Act();
+        }
+
+        Move(vInput.GetAxis());
+    }
+
     public override void Act()
     {
         if (isReloading)

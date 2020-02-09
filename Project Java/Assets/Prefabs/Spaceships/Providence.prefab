@@ -2319,6 +2319,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -46.244003
       objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: gustDelay
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: maxGustDelay
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: shotPerGust
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: shotDelay
+      value: 2.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fd77785f74e4c3408e576745775449e, type: 3}
 --- !u!4 &2431873443943619314 stripped
@@ -2334,6 +2354,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3008861028048622402}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2403,11 +2428,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.018914996
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter (3)
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
@@ -2517,6 +2537,26 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 157.87999
       objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: gustDelay
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: maxGustDelay
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: shotPerGust
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: shotDelay
+      value: 2.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fd77785f74e4c3408e576745775449e, type: 3}
 --- !u!4 &716844827314898724 stripped
@@ -2532,6 +2572,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3008861028048622402}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2601,11 +2646,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.018914996
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter (2)
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
@@ -2755,6 +2795,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -69.782005
       objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: gustDelay
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: maxGustDelay
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: shotPerGust
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: shotDelay
+      value: 1.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fd77785f74e4c3408e576745775449e, type: 3}
 --- !u!4 &7094109761822156242 stripped
@@ -2770,6 +2830,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3008861028048622402}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2839,11 +2904,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.018912803
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
@@ -2993,6 +3053,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -11.782001
       objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: gustDelay
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: shotPerGust
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: maxGustDelay
+      value: 26
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fd77785f74e4c3408e576745775449e, type: 3}
 --- !u!4 &6810972723944582097 stripped
@@ -3008,6 +3083,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3008861028048622402}
     m_Modifications:
+    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Fighter (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389859025539388959, guid: 3abab53f3e6d8064fa456ebb8d143a25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3077,11 +3157,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.018914996
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671369823454471180, guid: 3abab53f3e6d8064fa456ebb8d143a25,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Fighter (1)
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
@@ -3231,6 +3306,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -16.277
       objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: gustDelay
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: shotPerGust
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: maxGustDelay
+      value: 26
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fd77785f74e4c3408e576745775449e, type: 3}
 --- !u!4 &4956255260524189898 stripped
@@ -3320,6 +3410,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 157.87996
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: gustDelay
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: shotPerGust
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
+        type: 3}
+      propertyPath: maxGustDelay
+      value: 26
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fd77785f74e4c3408e576745775449e, type: 3}

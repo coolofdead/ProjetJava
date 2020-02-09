@@ -8,7 +8,7 @@ public class Arc170 : Allied
 
     protected override void Move()
     {
-        var isCloseRangeWithTarget = Vector3.Distance(transform.position, target.position) <= CLOSE_RANGE;
+        var isCloseRangeWithTarget = Vector3.Distance(transform.position, target.position) <= closeDistance;
         if (isCloseRangeWithTarget && !isRunningAway)
         {
             StartCoroutine(RunAway());

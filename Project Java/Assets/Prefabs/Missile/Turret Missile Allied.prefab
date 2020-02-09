@@ -30,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2602491222031665658}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 548.9, y: 33.799988, z: 45.9}
-  m_LocalScale: {x: 2, y: 2, z: 13}
+  m_LocalPosition: {x: 559.64, y: 33.507, z: 23.775}
+  m_LocalScale: {x: 6, y: 6, z: 45}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -142,8 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52b83f24caaee2478efaf407593b3c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 600
-  damage: 1
-  lifeTime: 12
+  speed: 3900
+  damage: 31
+  lifeTime: 3
   isAlliedMissile: 0
   isFromPlayer: 0

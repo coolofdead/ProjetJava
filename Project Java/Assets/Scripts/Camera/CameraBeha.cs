@@ -2,35 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(CameraShake))]
 public class CameraBeha : MonoBehaviour
 {
-    public Player player;
-    private CameraShake shake;
-
     public float recoilFactor;
-    [Range(0, 1)]
-    public float shakeSpeedRatio;
 
     public Transform anchor;
     public float minDist = 55f;
     public float yOffset = 20f;
 
-    private void Start()
-    {
-        shake = GetComponent<CameraShake>();
-    }
+    public float smoothSpeed = 0.125f;
+    public Vector3 offset = new Vector3(0, 0, -30);
 
     private void Update()
     {
+        return;
         transform.position = Vector3.Lerp(
             anchor.position + -transform.forward * minDist,
             anchor.position + -transform.forward * minDist + -transform.forward * recoilFactor,
-            player.player1.ForwardSpeed / player.player1.maxForwardSpeed);
+             Player.player.player1.ForwardSpeed / Player.player.player1.maxForwardSpeed);
 
         transform.position += new Vector3(0, yOffset, 0);
+    }
 
-        shake.isEnabled = player.player1.ForwardSpeed / player.player1.maxForwardSpeed > shakeSpeedRatio;
-        shake.shakeAmount = Mathf.Lerp(shake.shakeAmount, shake.maxShake, player.player1.ForwardSpeed / player.player1.maxForwardSpeed);
+    void FixedUpdate()
+    {
+        Vector3 desiredPosition = anchor.position + offset;
+        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+        transform.position = smoothedPosition;
+
+        transform.LookAt(anchor);
+    }
+
+    public void EnablePlayer()
+    {
+        Player.player.player1.enabled = true;
+        Player.player.player2.enabled = true;
     }
 }

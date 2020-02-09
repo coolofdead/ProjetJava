@@ -10,8 +10,8 @@ public class SpaceshipManager : MonoBehaviour
     public float spaceshipMinSpawnRange = 1000f;
     public int maxSpaceshipsSpawn = 20;
     public float spawnSpaceshipDelay = 3f;
-    [Range(0, 1)]
-    public float enemyAggroPlayerRate = 0.6f;
+
+    private static Spaceship enemyTargetingPlayer = null;
 
     private static SpaceshipManager singleton = null;
     private List<Spaceship> spaceshipSpawned = new List<Spaceship>();
@@ -65,15 +65,17 @@ public class SpaceshipManager : MonoBehaviour
         if (newSpaceship is Enemy)
         {
             var alliesSpaceship = singleton.spaceshipSpawned.FindAll(spaceship => spaceship is Allied);
-            if (alliesSpaceship.Count == 0)
+            if (enemyTargetingPlayer == null)
             {
+                enemyTargetingPlayer = newSpaceship;
+                GoalIndicatorManager.SetEnemyReference((Enemy)newSpaceship);
                 newSpaceship.SetTarget(Player.player.transform);
             }
-            else
+            else if (alliesSpaceship.Count > 0)
             {
-                bool aggroPlayer = Random.Range(0f, 1f) <= singleton.enemyAggroPlayerRate;
-                Transform target = aggroPlayer ? Player.player.transform : alliesSpaceship[Random.Range(0, alliesSpaceship.Count)].transform;
-                newSpaceship.SetTarget(target);
+                Transform target = alliesSpaceship[Random.Range(0, alliesSpaceship.Count)].transform;
+                if (target != null && newSpaceship != null)
+                    newSpaceship.SetTarget(target);
             }
         }
         else

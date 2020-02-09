@@ -5,21 +5,33 @@ using UnityEngine.UI;
 
 public class GoalIndicator : MonoBehaviour
 {
-    public Transform reference;
-    public Transform besideTo;
+    [HideInInspector]
+    public Enemy reference;
+    private Transform besideTo;
 
+    public GameObject enemyLife;
+    public Image enemyLifeBar;
     public Image image;
+
     [SerializeField]
     private float radius;
+
+    private void Start()
+    {
+        besideTo = Player.player.transform;
+    }
 
     void Update()
     {
         image.enabled = reference != null;
+        enemyLife.SetActive(reference != null);
 
         if (reference == null)
             return;
 
-        var dir = reference.position - besideTo.position;
+        enemyLifeBar.fillAmount = (float)reference.Life / (float)reference.maxLife;
+
+        var dir = reference.transform.position - besideTo.position;
         image.transform.localPosition = new Vector3(dir.normalized.x, dir.normalized.z, 0) * radius;
     }
 }

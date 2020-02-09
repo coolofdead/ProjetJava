@@ -15,6 +15,7 @@ public abstract class Vehicle : MonoBehaviour
     protected KeyCode leftAxis, rightAxis, upAxis, downAxis, button1, button2;
 
     protected VirtualInput vInput;
+    public VirtualInput VInput { get { return vInput; } }
 
     protected virtual void Start()
     {
@@ -23,6 +24,9 @@ public abstract class Vehicle : MonoBehaviour
 
     protected virtual void Update()
     {
+        if (OptionUI.isPaused)
+            return;
+
         if (vInput.FirstButtonPressed())
         {
             Act();

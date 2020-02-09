@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class IntroUI : MonoBehaviour
 {
     public Animator missionDescription;
+    public LoadingLevel loadingLevel;
 
     public void DiplsayMissionDescription()
     {
@@ -15,7 +16,7 @@ public class IntroUI : MonoBehaviour
 
     public void InitLevel()
     {
-        SceneManager.LoadScene("Level " + IntroManager.level, LoadSceneMode.Single);
+        StartCoroutine(loadingLevel.LoadScene("Level " + IntroManager.level));
     }
 
     public void StartCameraAnimation()

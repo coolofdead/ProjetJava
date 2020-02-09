@@ -23,13 +23,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2305990625231009463}
-  m_LocalRotation: {x: -0, y: 0.10190972, z: -0, w: 0.99479365}
+  m_LocalRotation: {x: -0, y: 0.058781676, z: -0, w: 0.99827087}
   m_LocalPosition: {x: -672.00037, y: -89.00001, z: 565}
   m_LocalScale: {x: 0.9999334, y: 0.9999334, z: 0.9999334}
   m_Children: []
   m_Father: {fileID: 7601497887191883058}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 11.698001, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 6.7400002, z: 0}
 --- !u!1 &4857986090810122445
 GameObject:
   m_ObjectHideFlags: 0
@@ -53,13 +53,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4857986090810122445}
-  m_LocalRotation: {x: -0, y: -0.09014435, z: -0, w: 0.9959287}
-  m_LocalPosition: {x: 665.9999, y: -79, z: 510}
+  m_LocalRotation: {x: 0.016607087, y: -0.054914605, z: -0.061502505, w: 0.99645674}
+  m_LocalPosition: {x: 695, y: -83, z: 513}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7601497887191883058}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -10.344001, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.5090001, y: -6.4030004, z: -7.1480002}
 --- !u!1 &4941137887481695599
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,15 +217,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  life: 1
-  maxSpeed: 94
-  rotateSpeed: 3
-  angleShot: 5
-  shotRange: 250
+  maxLife: 100
+  speed: 104
+  rotateSpeed: 2.7
+  angleShot: 14
+  shotRange: 350
   reloadTime: 1.7
   missilePrefab: {fileID: 7396889829957288806, guid: 12ec3eea1eead794985643704d96f964,
     type: 3}
-  runAwayDuration: 4
+  runAwayDuration: 3
   anchorCanons:
   - {fileID: 1925452822240431082}
   - {fileID: 5543435691638242339}

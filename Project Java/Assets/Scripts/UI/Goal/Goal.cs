@@ -29,7 +29,7 @@ public class Goal : MonoBehaviour
 
         if (allGoalCompleted)
         {
-            Debug.Log("End of level");
+            EndLevelUI.DisplayEndLevelScreen(false);
         }
     }
 

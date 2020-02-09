@@ -3,9 +3,11 @@
 public class Ywing : Vehicle
 {
     public float rotateSpeed = 130f;
+    public float autoRotateDivider = 2f;
     public float tiltRight;
-    public float tiltLeft;
+    private float tiltLeft;
     private float curRot = 0;
+    public float CurRot { get { return curRot; } }
 
     [SerializeField]
     private Shield shield;
@@ -18,8 +20,10 @@ public class Ywing : Vehicle
     {
         base.Start();
 
+        tiltLeft = -tiltRight;
+
         rbody = Player.player.gameObject.AddComponent<Rigidbody>();
-        rbody.angularDrag = 3f;
+        rbody.angularDrag = 1f;
         rbody.drag = 1f;
         rbody.useGravity = false;
     }
@@ -43,7 +47,9 @@ public class Ywing : Vehicle
     private void FixedUpdate()
     {
         Vector3 inputAxis = vInput.GetAxis();
-        Vector3 linearInput = new Vector3(inputAxis.y, inputAxis.x, -inputAxis.x * 0.5f);
+        Vector3 linearInput = new Vector3(inputAxis.y, 0, 0);
+
+        Player.player.transform.Rotate(Vector3.up * angularForce.z * inputAxis.x * Time.deltaTime);
 
         rbody.AddRelativeForce(new Vector3(0, 0, forwardSpeed), ForceMode.Force);
         rbody.AddRelativeTorque(Vector3.Scale(angularForce, linearInput) * forceMultiplier, ForceMode.Force);
@@ -62,13 +68,13 @@ public class Ywing : Vehicle
         {
             if (curRot > 0)
             {
-                curRot--;
-                transform.Rotate(Vector3.forward, rotateSpeed * 0.016f);
+                curRot -= 1 / (rotateSpeed / (rotateSpeed / autoRotateDivider));
+                transform.Rotate(Vector3.forward, rotateSpeed / autoRotateDivider * 0.016f);
             }
             if (curRot < 0)
             {
-                curRot++;
-                transform.Rotate(Vector3.forward, -rotateSpeed * 0.016f);
+                curRot += 1 / (rotateSpeed / (rotateSpeed / autoRotateDivider));
+                transform.Rotate(Vector3.forward, -rotateSpeed / autoRotateDivider * 0.016f);
             }
         }
 

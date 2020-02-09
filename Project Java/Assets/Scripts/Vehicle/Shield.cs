@@ -15,7 +15,7 @@ public class Shield : MonoBehaviour, IDamageable
     public float ActifTimeLeft { get { return actifTimeLeft; } }
     private bool isRecovering;
     public bool IsRecovering { get { return isRecovering; } }
-    public float recoveryTime = 15;
+    public float recoveryTime = 8;
     public float recoveryTimeOverSec = 0.2f;
     private bool state;
     public bool State
