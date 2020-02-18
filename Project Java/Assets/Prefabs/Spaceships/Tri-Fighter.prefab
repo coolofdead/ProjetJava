@@ -340,7 +340,7 @@ MonoBehaviour:
   missilePrefab: {fileID: 5623991826525285357, guid: e068a0f87b8c5de408ec19644a48635d,
     type: 3}
   canonAnchor: {fileID: 2842597089192642464}
-  movingStraightDuration: 2
+  movingStraightDuration: 3
 --- !u!114 &-5742016716225240515
 MonoBehaviour:
   m_ObjectHideFlags: 0

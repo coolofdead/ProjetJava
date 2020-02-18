@@ -13830,10 +13830,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 239ad284ca4957440975750d0b644d7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recoilFactor: 30
-  anchor: {fileID: 3357764356390790038}
-  minDist: 65
-  yOffset: 20
+  anchor: {fileID: 0}
+  smoothSpeed: 0.125
+  smoothRotate: 0.13
+  horizontalSmoothRotate: 0.4
+  verticalSmoothRotate: 10
+  forwardMultiplicator: -30
+  rotationOffset: {x: 2, y: 0, z: 0}
 --- !u!95 &73292859
 Animator:
   serializedVersion: 3

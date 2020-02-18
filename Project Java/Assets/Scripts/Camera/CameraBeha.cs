@@ -4,33 +4,27 @@ using UnityEngine;
 
 public class CameraBeha : MonoBehaviour
 {
-    public float recoilFactor;
-
     public Transform anchor;
-    public float minDist = 55f;
-    public float yOffset = 20f;
 
     public float smoothSpeed = 0.125f;
-    public Vector3 offset = new Vector3(0, 0, -30);
+    public float smoothRotate = 0.125f;
+    public float horizontalSmoothRotate = 0.7f;
+    public float verticalSmoothRotate = 0.7f;
+    public float forwardMultiplicator = 5f;
+    public Vector3 rotationOffset;
 
-    private void Update()
+    private void Start()
     {
-        return;
-        transform.position = Vector3.Lerp(
-            anchor.position + -transform.forward * minDist,
-            anchor.position + -transform.forward * minDist + -transform.forward * recoilFactor,
-             Player.player.player1.ForwardSpeed / Player.player.player1.maxForwardSpeed);
-
-        transform.position += new Vector3(0, yOffset, 0);
+        transform.SetParent(transform.parent.parent);
     }
 
     void FixedUpdate()
     {
-        Vector3 desiredPosition = anchor.position + offset;
-        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-        transform.position = smoothedPosition;
+        Vector3 desiredPosition = anchor.position + anchor.forward * forwardMultiplicator + transform.up * verticalSmoothRotate;
+        transform.position = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
 
-        transform.LookAt(anchor);
+        var q = Quaternion.Euler(transform.eulerAngles + rotationOffset);
+        transform.rotation = Quaternion.Lerp(q, anchor.rotation, smoothRotate);
     }
 
     public void EnablePlayer()
