@@ -97,10 +97,10 @@ MonoBehaviour:
   m_templateMaterial: {fileID: 2100000, guid: f68f8c3a3d76fb74cbb880d372c81620, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: 0, y: 0, z: 0}
-  m_endPos: {x: 0, y: 0, z: 1.5}
+  m_endPos: {x: 0, y: 0, z: 2}
   m_lineColor: {r: 1, g: 0, b: 0, a: 0}
-  m_lineWidth: 0.7
-  m_lightSaberFactor: 0.85
+  m_lineWidth: 2
+  m_lightSaberFactor: 0.9
 --- !u!54 &8523564724281279237
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -142,8 +142,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52b83f24caaee2478efaf407593b3c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 850
+  speed: 3600
   damage: 16
-  lifeTime: 7
+  lifeTime: 4
   isAlliedMissile: 0
   isFromPlayer: 0
+  hitEffect: {fileID: 198412575365993126, guid: abdc837d9a07acd409959e581ef68e61,
+    type: 3}

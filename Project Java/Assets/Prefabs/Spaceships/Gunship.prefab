@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2956937069657956438}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
   m_LocalPosition: {x: 529.2891, y: -0.010131836, z: 6.3}
-  m_LocalScale: {x: 0.037825614, y: 0.037825614, z: 0.037825614}
+  m_LocalScale: {x: 0.11347683, y: 0.1134768, z: 0.1134768}
   m_Children:
   - {fileID: 8591918726518997373}
   - {fileID: 8792098883215592692}
@@ -79,15 +79,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   maxLife: 300
-  speed: 8
+  speed: 270
   rotateSpeed: 2.3
   angleShot: 180
-  shotRange: 600
+  shotRange: 1500
   reloadTime: 2.1
   missilePrefab: {fileID: 7396889829957288806, guid: 12ec3eea1eead794985643704d96f964,
     type: 3}
   runAwayDuration: 6
-  distanceFromAlly: 150
+  distanceFromAlly: 800
   leftCanon: {fileID: 8792098883215592692}
   rightCanon: {fileID: 897813987414206611}
 --- !u!1 &5368458570922339017

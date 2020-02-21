@@ -10,6 +10,8 @@ public class Missile : MonoBehaviour
     private bool isAlliedMissile;
     public bool isFromPlayer = false;
 
+    public ParticleSystem hitEffect;
+
     private void Start()
     {
         Destroy(gameObject, lifeTime);
@@ -32,6 +34,8 @@ public class Missile : MonoBehaviour
                 {
                     unit.TakeDamage(damage);
 
+                    Instantiate(hitEffect.gameObject, transform.position, Quaternion.identity);
+
                     Destroy(gameObject);
                 }
             }
@@ -43,8 +47,9 @@ public class Missile : MonoBehaviour
                     GoalIndicatorManager.SetEnemyReference(unit as Enemy);
                     unit.TakeDamage(damage);
 
-                    Destroy(gameObject);
+                    Instantiate(hitEffect.gameObject, transform.position, Quaternion.identity);
 
+                    Destroy(gameObject);
                 }
             }
         }

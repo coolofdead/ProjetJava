@@ -13,6 +13,12 @@ public class CameraBeha : MonoBehaviour
     public float forwardMultiplicator = 5f;
     public Vector3 rotationOffset;
 
+    private void OnEnable()
+    {
+        Destroy(GetComponent<Animator>());
+        EnablePlayer();
+    }
+
     private void Start()
     {
         transform.SetParent(transform.parent.parent);

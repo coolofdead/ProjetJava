@@ -128,7 +128,7 @@ MonoBehaviour:
   m_startPos: {x: 0, y: 0, z: 0}
   m_endPos: {x: 0, y: 0, z: 1.5}
   m_lineColor: {r: 0.092196584, g: 1, b: 0, a: 0}
-  m_lineWidth: 0.6
+  m_lineWidth: 2
   m_lightSaberFactor: 0.8
 --- !u!114 &7396889829957288806
 MonoBehaviour:
@@ -142,8 +142,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52b83f24caaee2478efaf407593b3c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 960
+  speed: 3600
   damage: 26
-  lifeTime: 7
+  lifeTime: 4
   isAlliedMissile: 1
   isFromPlayer: 0
+  hitEffect: {fileID: 198412575365993126, guid: abdc837d9a07acd409959e581ef68e61,
+    type: 3}

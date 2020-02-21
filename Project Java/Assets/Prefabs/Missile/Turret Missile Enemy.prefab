@@ -118,6 +118,7 @@ MonoBehaviour:
   lifeTime: 3
   isAlliedMissile: 0
   isFromPlayer: 0
+  hitEffect: {fileID: 0}
 --- !u!54 &3881405239113188151
 Rigidbody:
   m_ObjectHideFlags: 0

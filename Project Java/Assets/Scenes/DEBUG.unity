@@ -527,7 +527,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1599788834
 GameObject:
@@ -621,7 +621,7 @@ RectTransform:
   m_Children:
   - {fileID: 264524424}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -796,8 +796,57 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -7.3440003, y: -161.09201, z: -158.649}
+--- !u!1 &1807700835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807700837}
+  - component: {fileID: 1807700836}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1807700836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807700835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca97091c12cda694ca9318e6b961892e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spaceships:
+  - {fileID: 5772997200622732439, guid: 96b852061a449ed4e8cce9feb81d2f22, type: 3}
+  - {fileID: -823201655921501175, guid: 3abab53f3e6d8064fa456ebb8d143a25, type: 3}
+  spaceshipMinSpawnRange: 1000
+  maxSpaceshipsSpawn: 80
+  spawnSpaceshipDelay: 3
+--- !u!4 &1807700837
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807700835}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3911.283, y: 3244.376, z: -26708.797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1843181162 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8247756917345857353, guid: 33f3464c845403e408ca691eb4e5ee7f,
@@ -1721,6 +1770,7 @@ MonoBehaviour:
   tiltRight: 15
   shield: {fileID: 1843181164}
   angularForce: {x: 0.7, y: 1, z: 18}
+  horizontalRotate: 15
 --- !u!4 &131095548670865458
 Transform:
   m_ObjectHideFlags: 0
@@ -20388,26 +20438,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6712214704154358090}
     m_Modifications:
-    - target: {fileID: 5609424132309382774, guid: 33f3464c845403e408ca691eb4e5ee7f,
-        type: 3}
-      propertyPath: recoveryTime
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5421282278181389269, guid: 33f3464c845403e408ca691eb4e5ee7f,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6934116405087998433, guid: 33f3464c845403e408ca691eb4e5ee7f,
-        type: 3}
-      propertyPath: m_Name
-      value: Ywing Shield
-      objectReference: {fileID: 0}
-    - target: {fileID: 6934116405087998433, guid: 33f3464c845403e408ca691eb4e5ee7f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8247756917345857353, guid: 33f3464c845403e408ca691eb4e5ee7f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20462,6 +20492,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609424132309382774, guid: 33f3464c845403e408ca691eb4e5ee7f,
+        type: 3}
+      propertyPath: recoveryTime
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421282278181389269, guid: 33f3464c845403e408ca691eb4e5ee7f,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6934116405087998433, guid: 33f3464c845403e408ca691eb4e5ee7f,
+        type: 3}
+      propertyPath: m_Name
+      value: Ywing Shield
+      objectReference: {fileID: 0}
+    - target: {fileID: 6934116405087998433, guid: 33f3464c845403e408ca691eb4e5ee7f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33f3464c845403e408ca691eb4e5ee7f, type: 3}
@@ -25203,7 +25253,7 @@ Transform:
   - {fileID: 5700293204704532980}
   - {fileID: 3357764356403933036}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6192225102530337662
 MonoBehaviour:
