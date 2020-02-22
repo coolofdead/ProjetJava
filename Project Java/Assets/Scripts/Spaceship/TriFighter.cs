@@ -30,6 +30,9 @@ public class TriFighter : Enemy
 
     protected override void Shoot()
     {
+        shoot.clip = shoots[Random.Range(0, shoots.Length)];
+        shoot.Play();
+
         Instantiate(missilePrefab.gameObject, canonAnchor.position, canonAnchor.rotation);
 
         StartCoroutine(Reload());

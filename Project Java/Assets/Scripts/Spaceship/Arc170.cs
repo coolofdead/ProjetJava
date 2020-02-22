@@ -23,6 +23,9 @@ public class Arc170 : Allied
     {
         foreach(Transform canonAnchor in anchorCanons)
         {
+            shoot.clip = shoots[Random.Range(0, shoots.Length)];
+            shoot.Play();
+
             Instantiate(missilePrefab.gameObject, canonAnchor.position, canonAnchor.rotation);
         }
 

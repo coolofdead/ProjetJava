@@ -1,31 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5652923530899050285
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6050e2d5de785ce4d931e4dbdbf2d755, type: 3}
-  m_Name: ChromaticAberration
-  m_EditorClassIdentifier: 
-  active: 1
-  enabled:
-    overrideState: 1
-    value: 1
-  spectralLut:
-    overrideState: 1
-    value: {fileID: 0}
-    defaultState: 1
-  intensity:
-    overrideState: 1
-    value: 0.131
-  fastMode:
-    overrideState: 1
-    value: 1
 --- !u!114 &-1297432932407774253
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -78,14 +52,14 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   temperature:
-    overrideState: 1
-    value: 91
-  tint:
     overrideState: 0
+    value: -13
+  tint:
+    overrideState: 1
     value: -24
   colorFilter:
     overrideState: 1
-    value: {r: 0.627451, g: 1, b: 0.9670013, a: 1}
+    value: {r: 1.6415094, g: 1.4426236, b: 0.8749555, a: 1}
   hueShift:
     overrideState: 0
     value: 14
@@ -1353,8 +1327,6 @@ MonoBehaviour:
   - {fileID: 562870444163561281}
   - {fileID: -1297432932407774253}
   - {fileID: 5683124581001105521}
-  - {fileID: -5652923530899050285}
-  - {fileID: 6254835427481234049}
 --- !u!114 &562870444163561281
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1441,31 +1413,3 @@ MonoBehaviour:
   speedDown:
     overrideState: 1
     value: 1
---- !u!114 &6254835427481234049
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
-  m_Name: Grain
-  m_EditorClassIdentifier: 
-  active: 0
-  enabled:
-    overrideState: 1
-    value: 1
-  colored:
-    overrideState: 1
-    value: 1
-  intensity:
-    overrideState: 1
-    value: 0.376
-  size:
-    overrideState: 1
-    value: 1.64
-  lumContrib:
-    overrideState: 1
-    value: 0.984

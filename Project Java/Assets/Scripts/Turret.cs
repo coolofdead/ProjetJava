@@ -7,13 +7,15 @@ public class Turret : MonoBehaviour, IDamageable
     public Missile missilePrefab;
     public Transform[] canonAnchors;
 
-    public float gustDelay;
-    public float maxGustDelay;
+    public float gustDelay, maxGustDelay, shotDelay;
     public int shotPerGust;
-    public float shotDelay;
+
+    AudioSource shoot;
+    public AudioClip[] shoots;
 
     private void Start()
     {
+        shoot = GetComponent<AudioSource>();
         Invoke("StartShooting", Random.Range(gustDelay, maxGustDelay));
     }
 
@@ -28,6 +30,9 @@ public class Turret : MonoBehaviour, IDamageable
         {
             foreach (Transform canonAnchor in canonAnchors)
                 Instantiate(missilePrefab.gameObject, canonAnchor.position, canonAnchor.rotation);
+
+            shoot.clip = shoots[Random.Range(0, shoots.Length)];
+            shoot.Play();
 
             yield return new WaitForSeconds(shotDelay);
         }

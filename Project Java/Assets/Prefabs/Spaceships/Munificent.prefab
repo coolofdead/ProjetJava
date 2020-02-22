@@ -512,10 +512,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6378904328133246711}
     m_Modifications:
-    - target: {fileID: 9098595618580011217, guid: 6f431939957b3b54e9ec623b35a88adf,
+    - target: {fileID: 6975543170407848129, guid: 6f431939957b3b54e9ec623b35a88adf,
         type: 3}
-      propertyPath: m_Name
-      value: Turret Double Barrilet (1)
+      propertyPath: MaxDistance
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 5197133469434899138, guid: 6f431939957b3b54e9ec623b35a88adf,
         type: 3}
@@ -587,6 +587,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 220.43187
       objectReference: {fileID: 0}
+    - target: {fileID: 9098595618580011217, guid: 6f431939957b3b54e9ec623b35a88adf,
+        type: 3}
+      propertyPath: m_Name
+      value: Turret Double Barrilet (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 4801610730151796422, guid: 6f431939957b3b54e9ec623b35a88adf,
         type: 3}
       propertyPath: gustDelay
@@ -612,10 +617,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7900958109454571721}
     m_Modifications:
-    - target: {fileID: 4593485700790151936, guid: 94b01af0f9446544d81036af97222168,
+    - target: {fileID: 8139737592329720562, guid: 94b01af0f9446544d81036af97222168,
         type: 3}
-      propertyPath: m_Name
-      value: Turret Mono
+      propertyPath: MaxDistance
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 712711343017826579, guid: 94b01af0f9446544d81036af97222168,
         type: 3}
@@ -672,6 +677,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4593485700790151936, guid: 94b01af0f9446544d81036af97222168,
+        type: 3}
+      propertyPath: m_Name
+      value: Turret Mono
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94b01af0f9446544d81036af97222168, type: 3}
 --- !u!4 &2996944286690509302 stripped
@@ -687,10 +697,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5531911659919550974}
     m_Modifications:
-    - target: {fileID: 9098595618580011217, guid: 6f431939957b3b54e9ec623b35a88adf,
+    - target: {fileID: 6975543170407848129, guid: 6f431939957b3b54e9ec623b35a88adf,
         type: 3}
-      propertyPath: m_Name
-      value: Turret Double Barrilet
+      propertyPath: MaxDistance
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 5197133469434899138, guid: 6f431939957b3b54e9ec623b35a88adf,
         type: 3}
@@ -762,6 +772,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 220.43187
       objectReference: {fileID: 0}
+    - target: {fileID: 9098595618580011217, guid: 6f431939957b3b54e9ec623b35a88adf,
+        type: 3}
+      propertyPath: m_Name
+      value: Turret Double Barrilet
+      objectReference: {fileID: 0}
     - target: {fileID: 4801610730151796422, guid: 6f431939957b3b54e9ec623b35a88adf,
         type: 3}
       propertyPath: shotDelay
@@ -798,10 +813,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5531911659919550974}
     m_Modifications:
-    - target: {fileID: 9098595618580011217, guid: 6f431939957b3b54e9ec623b35a88adf,
+    - target: {fileID: 6975543170407848129, guid: 6f431939957b3b54e9ec623b35a88adf,
         type: 3}
-      propertyPath: m_Name
-      value: Turret Double Barrilet (1)
+      propertyPath: MaxDistance
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 5197133469434899138, guid: 6f431939957b3b54e9ec623b35a88adf,
         type: 3}
@@ -873,6 +888,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 220.43187
       objectReference: {fileID: 0}
+    - target: {fileID: 9098595618580011217, guid: 6f431939957b3b54e9ec623b35a88adf,
+        type: 3}
+      propertyPath: m_Name
+      value: Turret Double Barrilet (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 4801610730151796422, guid: 6f431939957b3b54e9ec623b35a88adf,
         type: 3}
       propertyPath: gustDelay
@@ -934,10 +954,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6378904328133246711}
     m_Modifications:
-    - target: {fileID: 9098595618580011217, guid: 6f431939957b3b54e9ec623b35a88adf,
+    - target: {fileID: 6975543170407848129, guid: 6f431939957b3b54e9ec623b35a88adf,
         type: 3}
-      propertyPath: m_Name
-      value: Turret Double Barrilet
+      propertyPath: MaxDistance
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 5197133469434899138, guid: 6f431939957b3b54e9ec623b35a88adf,
         type: 3}
@@ -1008,6 +1028,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 220.43187
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098595618580011217, guid: 6f431939957b3b54e9ec623b35a88adf,
+        type: 3}
+      propertyPath: m_Name
+      value: Turret Double Barrilet
       objectReference: {fileID: 0}
     - target: {fileID: 4801610730151796422, guid: 6f431939957b3b54e9ec623b35a88adf,
         type: 3}

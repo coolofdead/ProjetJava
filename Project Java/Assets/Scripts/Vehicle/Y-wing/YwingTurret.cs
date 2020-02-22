@@ -5,13 +5,18 @@ using UnityEngine;
 public class YwingTurret : Vehicle
 {
     public GameObject missilePrefab;
-    public Transform canonDroit;
-    public Transform canonGauche;
-    public float rotateSpeed = 90;
-    public float shotInterval;
-    private bool isReloading;
+    public Transform canonDroit, canonGauche;
+    public float rotateSpeed = 90, shotInterval;
 
-    private bool isOddSide = false;
+    private bool isOddSide = false, isReloading;
+
+    AudioSource shoot;
+
+    protected override void Start()
+    {
+        base.Start();
+        shoot = GetComponent<AudioSource>();
+    }
 
     protected override void Update()
     {
@@ -37,6 +42,8 @@ public class YwingTurret : Vehicle
         g.GetComponent<Missile>().isFromPlayer = true;
 
         isOddSide = !isOddSide;
+
+        shoot.Play();
 
         StartCoroutine(Reloading());
     }

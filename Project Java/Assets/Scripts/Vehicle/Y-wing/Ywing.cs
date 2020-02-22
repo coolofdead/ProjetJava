@@ -17,6 +17,8 @@ public class Ywing : Vehicle
     private const float forceMultiplier = 100.0f;
     private Rigidbody rbody;
 
+    AudioSource shieldAudio;
+
     protected override void Start()
     {
         base.Start();
@@ -27,6 +29,8 @@ public class Ywing : Vehicle
         rbody.angularDrag = 1f;
         rbody.drag = 1f;
         rbody.useGravity = false;
+
+        shieldAudio = GetComponent<AudioSource>();
     }
     
     protected override void Update()
@@ -58,6 +62,8 @@ public class Ywing : Vehicle
     public override void Act()
     {
         shield.State = !shield.State;
+        if (!shieldAudio.isPlaying)
+            shieldAudio.Play();
     }
 
     public override void Move(Vector3 dir)

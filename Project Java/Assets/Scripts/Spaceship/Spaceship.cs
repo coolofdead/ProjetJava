@@ -23,10 +23,40 @@ public abstract class Spaceship : MonoBehaviour, IDamageable
     protected float closeDistance = 90f;
     protected float distanceWithTarget;
 
+    public AudioSource move, shoot, voice;
+    public AudioClip[] moves, shoots, voices;
+
+    const float min = 90, max = 370;
+
+    public GameObject explosionEffectPrefab;
+
     void Start()
     {
         closeDistance = shotRange / 2;
         life = maxLife;
+
+        move.clip = moves[Random.Range(0, moves.Length)];
+        move.Play();
+
+        InvokeRepeating("HitTarget", 10, Random.Range(30, 110));
+
+        Invoke("PlayVoiceLine", Random.Range(min, max));
+    }
+
+    private void HitTarget()
+    {
+        Instantiate(explosionEffectPrefab, target.transform.position, Quaternion.identity);
+    }
+
+    private void PlayVoiceLine()
+    {
+        if (!shoot.isPlaying)
+        {
+            voice.clip = voices[Random.Range(0, voices.Length)];
+            voice.Play();
+        }
+
+        Invoke("PlayVoiceLine", Random.Range(min, max));
     }
 
     protected virtual void Update()
