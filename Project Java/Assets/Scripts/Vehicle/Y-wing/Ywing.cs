@@ -13,7 +13,7 @@ public class Ywing : Vehicle
     private Shield shield;
 
     public Vector3 angularForce = new Vector3(20.0f, 20.0f, 30.0f);
-    public float horizontalRotate = 15f;
+    public float horizontalRotate = 15f, strafSpeed = 15f;
     private const float forceMultiplier = 100.0f;
     private Rigidbody rbody;
 
@@ -55,6 +55,7 @@ public class Ywing : Vehicle
 
         Player.player.transform.Rotate(-Vector3.forward * horizontalRotate * inputAxis.x * Time.deltaTime, Space.Self);
         Player.player.transform.Rotate(Vector3.right * inputAxis.y * angularForce.z * Time.deltaTime, Space.Self);
+        Player.player.transform.Translate(-Vector3.forward * inputAxis.x * strafSpeed * Time.deltaTime, Space.Self);
 
         rbody.AddRelativeForce(new Vector3(0, 0, forwardSpeed), ForceMode.Force);
     }

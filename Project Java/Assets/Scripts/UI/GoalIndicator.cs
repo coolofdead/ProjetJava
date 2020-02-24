@@ -23,6 +23,15 @@ public class GoalIndicator : MonoBehaviour
 
     void Update()
     {
+        if (SpaceshipManager.enemyTargetingPlayer == null)
+        {
+            return;
+        }
+        else
+        {
+            reference = (Enemy)SpaceshipManager.enemyTargetingPlayer;
+        }
+
         image.enabled = reference != null;
         enemyLife.SetActive(reference != null);
 
@@ -31,7 +40,8 @@ public class GoalIndicator : MonoBehaviour
 
         enemyLifeBar.fillAmount = (float)reference.Life / (float)reference.maxLife;
 
-        var dir = reference.transform.position - besideTo.position;
-        image.transform.localPosition = new Vector3(dir.normalized.x, dir.normalized.z, 0) * radius;
+        var dir = (reference.transform.position - besideTo.position).normalized;
+        var pos = new Vector3(dir.x, dir.z, 0) * radius;
+        image.transform.localPosition = pos;
     }
 }

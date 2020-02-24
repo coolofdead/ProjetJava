@@ -44,7 +44,6 @@ public class Missile : MonoBehaviour
             {
                 if (unit is Enemy || unit is Turret || unit is EnemyShield)
                 {
-                    GoalIndicatorManager.SetEnemyReference(unit as Enemy);
                     unit.TakeDamage(damage);
 
                     Instantiate(hitEffect.gameObject, transform.position, Quaternion.identity);

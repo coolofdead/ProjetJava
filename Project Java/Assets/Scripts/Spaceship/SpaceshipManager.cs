@@ -11,7 +11,7 @@ public class SpaceshipManager : MonoBehaviour
     public int maxSpaceshipsSpawn = 20;
     public float spawnSpaceshipDelay = 3f;
 
-    private static Spaceship enemyTargetingPlayer = null;
+    public static Spaceship enemyTargetingPlayer = null;
 
     private static SpaceshipManager singleton = null;
     private List<Spaceship> spaceshipSpawned = new List<Spaceship>();
@@ -68,7 +68,6 @@ public class SpaceshipManager : MonoBehaviour
             if (enemyTargetingPlayer == null)
             {
                 enemyTargetingPlayer = newSpaceship;
-                GoalIndicatorManager.SetEnemyReference((Enemy)newSpaceship);
                 newSpaceship.SetTarget(Player.player.transform);
             }
             else if (alliesSpaceship.Count > 0)

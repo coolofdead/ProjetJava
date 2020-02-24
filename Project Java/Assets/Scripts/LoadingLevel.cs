@@ -16,17 +16,19 @@ public class LoadingLevel : MonoBehaviour
         float curDelay = 0f;
         loading.SetActive(true);
 
-        while (curDelay < minDelay)
-        {
-            curDelay += Random.Range(0, 50) * Time.deltaTime;
-            loadingBar.fillAmount = curDelay / minDelay;
-            yield return new WaitForEndOfFrame();
-        }
+        //while (curDelay < minDelay)
+        //{
+        //    curDelay += Random.Range(0, 50) * Time.deltaTime;
+        //    loadingBar.fillAmount = curDelay / minDelay;
+        //    yield return new WaitForEndOfFrame();
+        //}
 
         AsyncOperation async = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
 
         while (!async.isDone)
         {
+            loadingBar.fillAmount = async.progress;
+
             yield return null;
         }
 

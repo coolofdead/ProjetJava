@@ -88,7 +88,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3033667219593020291, guid: 0d0ad9e3c4fda6e4c9c60efe080a6683, type: 3}
+  - {fileID: 2100000, guid: 2a2859baeeec7e14785299ea50011ea5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -285,7 +285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4907448980239675171}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2471862322514622637}
@@ -316,7 +316,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3033667219593020291, guid: 0d0ad9e3c4fda6e4c9c60efe080a6683, type: 3}
+  - {fileID: 2100000, guid: 2a2859baeeec7e14785299ea50011ea5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -522,7 +522,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3033667219593020291, guid: 0d0ad9e3c4fda6e4c9c60efe080a6683, type: 3}
+  - {fileID: 2100000, guid: 2a2859baeeec7e14785299ea50011ea5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -600,7 +600,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3033667219593020291, guid: 0d0ad9e3c4fda6e4c9c60efe080a6683, type: 3}
+  - {fileID: 2100000, guid: 2a2859baeeec7e14785299ea50011ea5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -715,13 +715,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
         type: 3}
-      propertyPath: shotPerGust
-      value: 2
+      propertyPath: shotDelay
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
         type: 3}
-      propertyPath: shotDelay
-      value: 2.1
+      propertyPath: shotPerGust
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fd77785f74e4c3408e576745775449e, type: 3}
@@ -831,13 +831,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
         type: 3}
-      propertyPath: shotPerGust
-      value: 2
+      propertyPath: shotDelay
+      value: 2.7
       objectReference: {fileID: 0}
     - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
         type: 3}
-      propertyPath: shotDelay
-      value: 2.7
+      propertyPath: shotPerGust
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fd77785f74e4c3408e576745775449e, type: 3}
@@ -947,13 +947,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
         type: 3}
-      propertyPath: shotPerGust
-      value: 4
+      propertyPath: shotDelay
+      value: 2.7
       objectReference: {fileID: 0}
     - target: {fileID: 8681357715380357100, guid: 8fd77785f74e4c3408e576745775449e,
         type: 3}
-      propertyPath: shotDelay
-      value: 2.7
+      propertyPath: shotPerGust
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fd77785f74e4c3408e576745775449e, type: 3}

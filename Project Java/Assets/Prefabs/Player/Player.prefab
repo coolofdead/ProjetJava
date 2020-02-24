@@ -3093,7 +3093,7 @@ AudioSource:
   m_GameObject: {fileID: 490919839924693234}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 3af125b75d194754d81fb2cbf4b4c40a,
+  OutputAudioMixerGroup: {fileID: 2538057286134905197, guid: 3af125b75d194754d81fb2cbf4b4c40a,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: fb4b25df926899545ade2517cfa38059, type: 3}
   m_PlayOnAwake: 0
@@ -3106,7 +3106,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 3000
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -13940,9 +13940,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 200000
-  field of view: 60
+  near clip plane: 0.2
+  far clip plane: 300000
+  field of view: 40
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -14045,7 +14045,7 @@ MonoBehaviour:
   smoothRotate: 0.13
   horizontalSmoothRotate: 0.4
   verticalSmoothRotate: 10
-  forwardMultiplicator: -80
+  forwardMultiplicator: -150
   rotationOffset: {x: 2, y: 0, z: 0}
 --- !u!95 &73292859
 Animator:
@@ -25028,7 +25028,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 742508f6820d6b144ad08b798624ceb4, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -34249,8 +34249,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc054c73c315c94488979cb14125dfb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxForwardSpeed: 300
-  minForwardSpeed: 200
+  maxForwardSpeed: 390
+  minForwardSpeed: 280
   acceleration: 220
   decelaration: 96
   leftAxis: 113
@@ -36942,11 +36942,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6712214704159112624}
     m_Modifications:
-    - target: {fileID: 6934116405087998433, guid: 33f3464c845403e408ca691eb4e5ee7f,
-        type: 3}
-      propertyPath: m_Name
-      value: Ywing Shield
-      objectReference: {fileID: 0}
     - target: {fileID: 8247756917345857353, guid: 33f3464c845403e408ca691eb4e5ee7f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -37001,6 +36996,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6934116405087998433, guid: 33f3464c845403e408ca691eb4e5ee7f,
+        type: 3}
+      propertyPath: m_Name
+      value: Ywing Shield
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33f3464c845403e408ca691eb4e5ee7f, type: 3}
