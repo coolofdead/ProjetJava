@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3068979565874978191}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.125, y: 1.125, z: 24}
+  m_LocalScale: {x: 1.125, y: 1.125, z: 30}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -128,8 +128,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9745687, y: 1.2457302, z: 1.5308694}
-  m_Center: {x: -0.03957113, y: 0.12033715, z: 0.7654347}
+  m_Size: {x: 4, y: 4, z: 2}
+  m_Center: {x: -0.03957113, y: 0.12033715, z: 1}
 --- !u!114 &5623991826525285357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52b83f24caaee2478efaf407593b3c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3600
+  speed: 5000
   damage: 16
   lifeTime: 4
   isAlliedMissile: 0

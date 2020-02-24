@@ -637,16 +637,16 @@ PrefabInstance:
     - target: {fileID: 4443431882965507968, guid: 6b47718949ac1ea43b26d843822285d8,
         type: 3}
       propertyPath: m_Text
-      value: "\t\t\t\t    CHAPiTRE i\r\n\t      Battaile sur Coruscant\r\n\r\nL'arm\xE9e
-        droide des s\xE9paratistes \xE0 repris le controle de Coruscant. Prot\xE9g\xE9e
-        d\xE9rri\xE8re leur puissant blocus, les dirigeants se rassemblent contre
-        l'ordre jedi.\r\n\r\nApr\xE8s une longue discution strat\xE9gique, le conseil
-        r\xE9publicain men\xE9 par le grand Palpatine a d\xE9cid\xE9 de riposter
-        contre une eventuelle menace des s\xE9paratistes en envoyant Anakin Skywalker
-        sur place. \r\n\r\nMalgr\xE9 les r\xE9primandes du conseil jedi, le jeune
-        Skywalker souhaite prouver sa valeur et ainsi m\xE9riter sa place dans l'ordre.\r\n\r\nPendant
-        ce temps les clones et leur chef se pr\xE9parent \xE0 partir en guerre afin
-        de d\xE9nouer les plans qui se trame dans le dos de la r\xE9publique...\r\n\r\n\r\n\r\n\r\n"
+      value: "\t\t\t\t    CHAPiTRE i\r\n\t      Bataille sur Coruscant\r\n\r\nL'arm\xE9e
+        droide des s\xE9paratistes \xE0 repris le controle de Coruscant. Prot\xE9g\xE9s
+        derri\xE8re leur puissant blocus, les dirigeants se rassemblent contre l'ordre
+        jedi.\r\n\r\nApr\xE8s une longue discution strat\xE9gique, le conseil r\xE9publicain
+        men\xE9 ar le grand Palpatine a d\xE9cid\xE9 de riposter contre une eventuelle
+        menace des s\xE9paratistes en envoyant Anakin Skywalker sur place. \r\n\r\nMalgr\xE9
+        les r\xE9primandes du conseil jedi, le jeune Skywalker souhaite prouver sa
+        valeur et ainsi m\xE9riter sa place dans l'ordre.\r\n\r\nPendant ce temps
+        les clones et leur chef se pr\xE9parent \xE0 partir en guerre afin de de
+        mettre en \xE9chec les plans contre la r\xE9publique...\r\n\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 4443431882965507968, guid: 6b47718949ac1ea43b26d843822285d8,
         type: 3}

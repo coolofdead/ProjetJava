@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3597971455965454907
+--- !u!1 &5563770362598002522
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,13 +8,13 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4793433299297278282}
-  - component: {fileID: 2595353731670202339}
-  - component: {fileID: 1981541557096515831}
-  - component: {fileID: 8109063091244721739}
-  - component: {fileID: 3602778232508077840}
-  - component: {fileID: 7564031573580323017}
-  - component: {fileID: 7396889829957288806}
+  - component: {fileID: 4493825395165262891}
+  - component: {fileID: 6403124868392368770}
+  - component: {fileID: 7468988944701023638}
+  - component: {fileID: 887729993055963946}
+  - component: {fileID: 5559508908411173489}
+  - component: {fileID: 1450197497410024872}
+  - component: {fileID: 1909522185393614343}
   m_Layer: 0
   m_Name: Missile Allied
   m_TagString: Projectile
@@ -22,27 +22,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4793433299297278282
+--- !u!4 &4493825395165262891
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3597971455965454907}
+  m_GameObject: {fileID: 5563770362598002522}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.48367}
-  m_LocalScale: {x: 1.125, y: 1.125, z: 24}
+  m_LocalScale: {x: 1.125, y: 1.125, z: 30}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &2595353731670202339
+--- !u!54 &6403124868392368770
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3597971455965454907}
+  m_GameObject: {fileID: 5563770362598002522}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -52,34 +52,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!65 &1981541557096515831
+--- !u!65 &7468988944701023638
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3597971455965454907}
+  m_GameObject: {fileID: 5563770362598002522}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9745687, y: 1.2457302, z: 1.5308694}
-  m_Center: {x: -0.03957113, y: 0.12033715, z: 0.7654347}
---- !u!33 &8109063091244721739
+  m_Size: {x: 4, y: 4, z: 2}
+  m_Center: {x: -0.03957113, y: 0.12033715, z: 1}
+--- !u!33 &887729993055963946
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3597971455965454907}
+  m_GameObject: {fileID: 5563770362598002522}
   m_Mesh: {fileID: 0}
---- !u!23 &3602778232508077840
+--- !u!23 &5559508908411173489
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3597971455965454907}
+  m_GameObject: {fileID: 5563770362598002522}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -111,13 +111,13 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &7564031573580323017
+--- !u!114 &1450197497410024872
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3597971455965454907}
+  m_GameObject: {fileID: 5563770362598002522}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
@@ -126,23 +126,23 @@ MonoBehaviour:
   m_templateMaterial: {fileID: 2100000, guid: e606828340cede94fa62a4e2323772a1, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: 0, y: 0, z: 0}
-  m_endPos: {x: 0, y: 0, z: 1.5}
+  m_endPos: {x: 0, y: 0, z: 2}
   m_lineColor: {r: 0.092196584, g: 1, b: 0, a: 0}
   m_lineWidth: 2
   m_lightSaberFactor: 0.8
---- !u!114 &7396889829957288806
+--- !u!114 &1909522185393614343
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3597971455965454907}
+  m_GameObject: {fileID: 5563770362598002522}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e52b83f24caaee2478efaf407593b3c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3600
+  speed: 5000
   damage: 26
   lifeTime: 4
   isAlliedMissile: 1

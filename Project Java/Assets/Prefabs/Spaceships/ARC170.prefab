@@ -407,8 +407,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1360991219368177298, guid: 6934599e175a9d44b884fa382391c126, type: 3}
-  - {fileID: 6271573414225017425, guid: 6934599e175a9d44b884fa382391c126, type: 3}
+  - {fileID: 2100000, guid: c81444cce9d7b5f4da9499c7bbdac686, type: 2}
+  - {fileID: 2100000, guid: c81444cce9d7b5f4da9499c7bbdac686, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -530,9 +530,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 812ba9a06d9666d47935cddba9a28c52, type: 3}
   explosionEffectPrefab: {fileID: 100000, guid: abdc837d9a07acd409959e581ef68e61,
     type: 3}
-  missilePrefab: {fileID: 7396889829957288806, guid: 12ec3eea1eead794985643704d96f964,
+  missilePrefab: {fileID: 1909522185393614343, guid: 12ec3eea1eead794985643704d96f964,
     type: 3}
-  runAwayDuration: 3
+  runAwayDuration: 1.2
   anchorCanons:
   - {fileID: 1925452822240431082}
   - {fileID: 5543435691638242339}
@@ -655,7 +655,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 30
+  MaxDistance: 100
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -674,13 +674,22 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 1
-      value: 0.14837646
-      inSlope: -1.0344827
-      outSlope: -1.0344827
+      time: 0.17449333
+      value: 0.29896426
+      inSlope: -2.7518697
+      outSlope: -2.7518697
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.4102651
+      outWeight: 0.068490826
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0.011518013
+      outSlope: 0.011518013
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.3871207
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -690,7 +699,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

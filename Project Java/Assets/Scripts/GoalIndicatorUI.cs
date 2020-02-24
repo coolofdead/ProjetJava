@@ -16,5 +16,7 @@ public class GoalIndicatorUI : MonoBehaviour
     {
         float t = Vector3.Distance(transform.position, Player.player.transform.position) / maxDistance;
         transform.localScale = Vector3.one * Mathf.Lerp(minScale, maxScale, t);
+
+        transform.LookAt(Camera.main.transform);
     }
 }

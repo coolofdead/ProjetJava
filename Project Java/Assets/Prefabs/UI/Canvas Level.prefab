@@ -146,7 +146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1772614191007866321
 RectTransform:
   m_ObjectHideFlags: 0
@@ -285,8 +285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5043dfb50dd35b478e808292648d076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberRequired: 2
-  score: 2000
+  numberRequired: 4
+  score: 8000
   text: {fileID: 1772614192190051698}
   completed: {r: 0, g: 1, b: 0, a: 1}
   uncompleted: {r: 1, g: 1, b: 1, a: 1}
@@ -644,8 +644,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498e34cdb95e19e4a8f92fe1351c4bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberRequired: 6
-  score: 4000
+  numberRequired: 1
+  score: 50000
   text: {fileID: 1772614192767570958}
   completed: {r: 0, g: 1, b: 0, a: 1}
   uncompleted: {r: 1, g: 1, b: 1, a: 1}
@@ -1202,11 +1202,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1772614191007866321}
     m_Modifications:
-    - target: {fileID: 6049504191951237146, guid: 766d77e8e6ac72b48b2cb7fe6755899e,
-        type: 3}
-      propertyPath: m_Name
-      value: End Level
-      objectReference: {fileID: 0}
     - target: {fileID: 4518613639499958018, guid: 766d77e8e6ac72b48b2cb7fe6755899e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1312,6 +1307,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6049504191951237146, guid: 766d77e8e6ac72b48b2cb7fe6755899e,
+        type: 3}
+      propertyPath: m_Name
+      value: End Level
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 766d77e8e6ac72b48b2cb7fe6755899e, type: 3}
 --- !u!224 &3202231620698329555 stripped
@@ -1327,11 +1327,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1611137439}
     m_Modifications:
-    - target: {fileID: 3620752783203014939, guid: 84635ddade714fd4b8b6d8406b65f0e3,
-        type: 3}
-      propertyPath: m_Name
-      value: Fighter
-      objectReference: {fileID: 0}
     - target: {fileID: 3620752783203014938, guid: 84635ddade714fd4b8b6d8406b65f0e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1437,6 +1432,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3620752783203014939, guid: 84635ddade714fd4b8b6d8406b65f0e3,
+        type: 3}
+      propertyPath: m_Name
+      value: Fighter
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84635ddade714fd4b8b6d8406b65f0e3, type: 3}
 --- !u!1 &1832448965 stripped
@@ -1470,11 +1470,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1772614191007866321}
     m_Modifications:
-    - target: {fileID: 6470193931062630931, guid: 6acf870e6434cb84792014633a24984c,
-        type: 3}
-      propertyPath: m_Name
-      value: Options
-      objectReference: {fileID: 0}
     - target: {fileID: 6470193931062630930, guid: 6acf870e6434cb84792014633a24984c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1580,6 +1575,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6470193931062630931, guid: 6acf870e6434cb84792014633a24984c,
+        type: 3}
+      propertyPath: m_Name
+      value: Options
+      objectReference: {fileID: 0}
+    - target: {fileID: 6470193931062630931, guid: 6acf870e6434cb84792014633a24984c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6acf870e6434cb84792014633a24984c, type: 3}
 --- !u!224 &1468482769023237139 stripped
@@ -1595,11 +1600,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1772614191007866321}
     m_Modifications:
-    - target: {fileID: 6994481475797037270, guid: 8cc8180ac63e0ed4b813d0c05de52729,
-        type: 3}
-      propertyPath: m_Name
-      value: Shield Reload
-      objectReference: {fileID: 0}
     - target: {fileID: 6994481475797037269, guid: 8cc8180ac63e0ed4b813d0c05de52729,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1714,6 +1714,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994481475797037270, guid: 8cc8180ac63e0ed4b813d0c05de52729,
+        type: 3}
+      propertyPath: m_Name
+      value: Shield Reload
       objectReference: {fileID: 0}
     - target: {fileID: 6994481475795021661, guid: 8cc8180ac63e0ed4b813d0c05de52729,
         type: 3}

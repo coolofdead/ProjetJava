@@ -55,7 +55,7 @@ public class Ywing : Vehicle
 
         Player.player.transform.Rotate(-Vector3.forward * horizontalRotate * inputAxis.x * Time.deltaTime, Space.Self);
         Player.player.transform.Rotate(Vector3.right * inputAxis.y * angularForce.z * Time.deltaTime, Space.Self);
-        Player.player.transform.Translate(-Vector3.forward * inputAxis.x * strafSpeed * Time.deltaTime, Space.Self);
+        Player.player.transform.Rotate(Vector3.up * inputAxis.x * strafSpeed * Time.deltaTime, Space.Self);
 
         rbody.AddRelativeForce(new Vector3(0, 0, forwardSpeed), ForceMode.Force);
     }

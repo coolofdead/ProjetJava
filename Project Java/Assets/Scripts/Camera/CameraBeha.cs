@@ -26,9 +26,9 @@ public class CameraBeha : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector3 desiredPosition = anchor.position + anchor.forward * forwardMultiplicator + transform.up * verticalSmoothRotate;
+        Vector3 desiredPosition = anchor.position + anchor.forward * forwardMultiplicator + Vector3.up * verticalSmoothRotate;
         transform.position = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-
+        
         var q = Quaternion.Euler(transform.eulerAngles + rotationOffset);
         transform.rotation = Quaternion.Lerp(q, anchor.rotation, smoothRotate);
     }

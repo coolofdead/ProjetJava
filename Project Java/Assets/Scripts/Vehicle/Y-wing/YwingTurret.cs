@@ -39,7 +39,6 @@ public class YwingTurret : Vehicle
         Transform canonAnchor = isOddSide ? canonDroit : canonGauche;
         GameObject g = Instantiate(missilePrefab, canonAnchor.position, Quaternion.identity);
         g.transform.LookAt(canonAnchor.position + canonAnchor.forward);
-        g.GetComponent<Missile>().isFromPlayer = true;
 
         isOddSide = !isOddSide;
 

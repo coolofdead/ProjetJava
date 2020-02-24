@@ -14,5 +14,10 @@ public class GoalItem : MonoBehaviour
         if (m != null && e != null)
             if (m.isFromPlayer && e.Life <= 0)
                 Goal.NotifyAll(this);
+
+        if (m != null && m.isFromPlayer)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

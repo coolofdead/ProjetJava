@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2471862322514622637}
+  - component: {fileID: 7421362623447007317}
+  - component: {fileID: 2942614646698574333}
   m_Layer: 0
   m_Name: large-satellite-dish
   m_TagString: Untagged
@@ -31,6 +33,32 @@ Transform:
   m_Father: {fileID: 2281593114061384785}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7421362623447007317
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447494377020656318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &2942614646698574333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447494377020656318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f814436a89d43449a0e6de635e03f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
 --- !u!1 &2744487246528886742
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +116,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2a2859baeeec7e14785299ea50011ea5, type: 2}
+  - {fileID: 2100000, guid: a9d8565cd2f99b04c94288f457b17456, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -118,6 +146,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2199444680398596650}
+  - component: {fileID: 3317493337162119318}
+  - component: {fileID: 3530393406288584338}
   m_Layer: 0
   m_Name: large-satellite-dish (2)
   m_TagString: Untagged
@@ -140,6 +170,32 @@ Transform:
   m_Father: {fileID: 2281593114061384785}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3317493337162119318
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2944974345661913145}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &3530393406288584338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2944974345661913145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f814436a89d43449a0e6de635e03f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
 --- !u!1 &3014264672951861911
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,6 +205,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2274186313309155460}
+  - component: {fileID: 926551100170426291}
+  - component: {fileID: 4249593758960696849}
   m_Layer: 0
   m_Name: large-satellite-dish (1)
   m_TagString: Untagged
@@ -171,6 +229,32 @@ Transform:
   m_Father: {fileID: 2281593114061384785}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -52.342003, y: -90.00001, z: -90.00001}
+--- !u!65 &926551100170426291
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3014264672951861911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &4249593758960696849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3014264672951861911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f814436a89d43449a0e6de635e03f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
 --- !u!1 &3022620143932792386
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,7 +400,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2a2859baeeec7e14785299ea50011ea5, type: 2}
+  - {fileID: 2100000, guid: a9d8565cd2f99b04c94288f457b17456, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -359,6 +443,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4630109346349424728}
+  - component: {fileID: 48570128468000049}
+  - component: {fileID: 6161377776282096102}
   m_Layer: 0
   m_Name: large-satellite-dish (4)
   m_TagString: Untagged
@@ -381,6 +467,32 @@ Transform:
   m_Father: {fileID: 2281593114061384785}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -138.08, y: 89.99999, z: 89.99999}
+--- !u!65 &48570128468000049
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8510160847149552203}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 3, z: 2}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &6161377776282096102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8510160847149552203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f814436a89d43449a0e6de635e03f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
 --- !u!1 &8648635651850516531
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,7 +634,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2a2859baeeec7e14785299ea50011ea5, type: 2}
+  - {fileID: 2100000, guid: a9d8565cd2f99b04c94288f457b17456, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -600,7 +712,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2a2859baeeec7e14785299ea50011ea5, type: 2}
+  - {fileID: 2100000, guid: a9d8565cd2f99b04c94288f457b17456, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -841,15 +953,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fd77785f74e4c3408e576745775449e, type: 3}
---- !u!1 &8678212982562277141 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 320497751947735512, guid: 8fd77785f74e4c3408e576745775449e,
-    type: 3}
-  m_PrefabInstance: {fileID: 8943471267108435661}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5635249303860032774 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3614695986119640011, guid: 8fd77785f74e4c3408e576745775449e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8943471267108435661}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8678212982562277141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 320497751947735512, guid: 8fd77785f74e4c3408e576745775449e,
     type: 3}
   m_PrefabInstance: {fileID: 8943471267108435661}
   m_PrefabAsset: {fileID: 0}
@@ -957,15 +1069,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fd77785f74e4c3408e576745775449e, type: 3}
---- !u!4 &5643935081328774803 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3614695986119640011, guid: 8fd77785f74e4c3408e576745775449e,
-    type: 3}
-  m_PrefabInstance: {fileID: 8969679334034279768}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8649181592828345472 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 320497751947735512, guid: 8fd77785f74e4c3408e576745775449e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8969679334034279768}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5643935081328774803 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3614695986119640011, guid: 8fd77785f74e4c3408e576745775449e,
     type: 3}
   m_PrefabInstance: {fileID: 8969679334034279768}
   m_PrefabAsset: {fileID: 0}

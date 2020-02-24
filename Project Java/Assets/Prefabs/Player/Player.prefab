@@ -3078,7 +3078,7 @@ MonoBehaviour:
   downAxis: 274
   button1: 32
   button2: 101
-  missilePrefab: {fileID: 3597971455965454907, guid: 12ec3eea1eead794985643704d96f964,
+  missilePrefab: {fileID: 2573725106680979949, guid: a8cb8ea349b128847be1f44324f8260d,
     type: 3}
   canonDroit: {fileID: 226732359855616592}
   canonGauche: {fileID: 1779696924212938917}
@@ -34265,6 +34265,7 @@ MonoBehaviour:
   shield: {fileID: 824286096489437052}
   angularForce: {x: 0, y: 1, z: 40}
   horizontalRotate: 70
+  strafSpeed: 15
 --- !u!82 &2227832052141600564
 AudioSource:
   m_ObjectHideFlags: 0
@@ -36942,6 +36943,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6712214704159112624}
     m_Modifications:
+    - target: {fileID: 6934116405087998433, guid: 33f3464c845403e408ca691eb4e5ee7f,
+        type: 3}
+      propertyPath: m_Name
+      value: Ywing Shield
+      objectReference: {fileID: 0}
     - target: {fileID: 8247756917345857353, guid: 33f3464c845403e408ca691eb4e5ee7f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36996,11 +37002,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6934116405087998433, guid: 33f3464c845403e408ca691eb4e5ee7f,
-        type: 3}
-      propertyPath: m_Name
-      value: Ywing Shield
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33f3464c845403e408ca691eb4e5ee7f, type: 3}

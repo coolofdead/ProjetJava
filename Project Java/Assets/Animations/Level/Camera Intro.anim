@@ -99,7 +99,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 3957, y: -670, z: -26129}
+        value: {x: 3957, y: -349, z: -26129}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -109,8 +109,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 1
         value: {x: 3957, y: 0, z: -26129}
-        inSlope: {x: 0, y: 787.5, z: 0}
-        outSlope: {x: 0, y: 787.5, z: 0}
+        inSlope: {x: 0, y: 627, z: 0}
+        outSlope: {x: 0, y: 627, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -534,7 +534,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -670
+        value: -349
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -544,8 +544,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 1
         value: 0
-        inSlope: 787.5
-        outSlope: 787.5
+        inSlope: 627
+        outSlope: 627
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -709,6 +709,13 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0
+    functionName: StartLevel
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 2.9833333
     functionName: TriggerAnimation
     data: Separatists Fleet-Spawn Enemies
