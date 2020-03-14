@@ -69,13 +69,14 @@
     <Compile Include="Assets\Scripts\FXAA\Antialiasing.cs" />
     <Compile Include="Assets\Scripts\FXAA\PostEffectsBase.cs" />
     <Compile Include="Assets\Scripts\FXAA\PostEffectsHelper.cs" />
-    <Compile Include="Assets\Scripts\GoalIndicatorManager.cs" />
+    <Compile Include="Assets\Scripts\GoalIndicatorUI.cs" />
     <Compile Include="Assets\Scripts\Interface\IDamageable.cs" />
     <Compile Include="Assets\Scripts\Intro\IntroManager.cs" />
     <Compile Include="Assets\Scripts\Intro\IntroUI.cs" />
     <Compile Include="Assets\Scripts\LoadingLevel.cs" />
     <Compile Include="Assets\Scripts\Menu\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Menu\LevelPlanet.cs" />
+    <Compile Include="Assets\Scripts\Menu\R2D2.cs" />
     <Compile Include="Assets\Scripts\Missile.cs" />
     <Compile Include="Assets\Scripts\OptionElemUI.cs" />
     <Compile Include="Assets\Scripts\OptionUI.cs" />
@@ -132,8 +133,6 @@
     <Compile Include="Assets\TEST\Detonator Explosion Framework\System\DetonatorSpray.cs" />
     <Compile Include="Assets\TEST\Detonator Explosion Framework\TestScene\DetonatorTest.cs" />
     <Compile Include="Assets\TEST\Detonator Explosion Framework\TestScene\TouchToMouse.cs" />
-    <Compile Include="Assets\TEST\PyroParticles\Demo\DemoScript.cs" />
-    <Compile Include="Assets\TEST\PyroParticles\Demo\DemoScriptEditor.cs" />
     <Compile Include="Assets\TEST\PyroParticles\Prefab\Script\FireBaseScript.cs" />
     <Compile Include="Assets\TEST\PyroParticles\Prefab\Script\FireCollisionForwardScript.cs" />
     <Compile Include="Assets\TEST\PyroParticles\Prefab\Script\FireConstantBaseScript.cs" />

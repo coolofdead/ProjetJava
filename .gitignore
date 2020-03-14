@@ -1,5 +1,4 @@
-/.metadata/
-*.jar
 Library/
 Artifact/
 Build/
+model_cut_HP.obj
