@@ -1,3 +1,6 @@
 Library/
 Build/
 Artifact/
+model_cut_HP.obj
+/.vs/
+*.meta
