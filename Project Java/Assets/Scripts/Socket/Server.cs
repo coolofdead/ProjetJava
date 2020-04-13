@@ -14,6 +14,8 @@ public class Server : MonoBehaviour
     private const int bufferSize = 1000;
     private byte[] recieveBuffer = new byte[bufferSize];
 
+    private IControllerAuth controllerAuth = new ControllerAuthProtocol();
+
     private TcpListener server;
 
     public static ManualResetEvent clientConnected = new ManualResetEvent(false);
