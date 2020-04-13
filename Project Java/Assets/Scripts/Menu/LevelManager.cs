@@ -15,7 +15,7 @@ public class LevelManager : MonoBehaviour
     public Material enablePlanet;
     public Material disablePlanet;
 
-    private VirtualInput vInput = new VirtualInput(KeyCode.LeftArrow, KeyCode.RightArrow, KeyCode.UpArrow, KeyCode.DownArrow, KeyCode.Space, KeyCode.A);
+    private VirtualInput vInput;
 
     private bool axisIsOnCd;
     public float axisDelay = 0.2f;
@@ -28,6 +28,8 @@ public class LevelManager : MonoBehaviour
         {
             planets[i].SetMeshState(maxLevelReached >= i ? enablePlanet : disablePlanet);
         }
+
+        vInput = InputManager.GetVirtualInput(InputManager.PlayerTag.Player1);
     }
 
     void Update()
@@ -52,6 +54,7 @@ public class LevelManager : MonoBehaviour
             {
                 IntroManager.level = cursor + 1;
                 SceneManager.LoadScene("Intro", LoadSceneMode.Single);
+                Destroy(gameObject);
             }
         }
     }

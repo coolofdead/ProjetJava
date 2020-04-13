@@ -13,15 +13,10 @@ public class LoadingLevel : MonoBehaviour
 
     public IEnumerator LoadScene(string sceneName)
     {
-        float curDelay = 0f;
-        loading.SetActive(true);
+        for (int i = 0; i < 10; i++)
+            yield return new WaitForEndOfFrame();
 
-        //while (curDelay < minDelay)
-        //{
-        //    curDelay += Random.Range(0, 50) * Time.deltaTime;
-        //    loadingBar.fillAmount = curDelay / minDelay;
-        //    yield return new WaitForEndOfFrame();
-        //}
+        loading.SetActive(true);
 
         AsyncOperation async = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
 

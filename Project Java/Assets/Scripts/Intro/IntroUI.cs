@@ -1,12 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class IntroUI : MonoBehaviour
 {
     public Animator missionDescription;
-    public LoadingLevel loadingLevel;
 
     public void DiplsayMissionDescription()
     {
@@ -16,7 +14,7 @@ public class IntroUI : MonoBehaviour
 
     public void InitLevel()
     {
-        StartCoroutine(loadingLevel.LoadScene("Level " + IntroManager.level));
+        IntroManager.InitLevel();
     }
 
     public void StartCameraAnimation()

@@ -3,10 +3,8 @@
 public class VirtualInput
 {
     private KeyCode leftAxis, rightAxis, upAxis, downAxis, button1, button2;
-    private int playerId;
-    public int PlayerId { get { return playerId; } }
 
-    public VirtualInput(KeyCode leftAxis, KeyCode rightAxis, KeyCode upAxis, KeyCode downAxis, KeyCode button1, KeyCode button2, int playerId = 1)
+    public VirtualInput(KeyCode leftAxis, KeyCode rightAxis, KeyCode upAxis, KeyCode downAxis, KeyCode button1, KeyCode button2)
     {
         this.leftAxis = leftAxis;
         this.rightAxis = rightAxis;
@@ -14,7 +12,6 @@ public class VirtualInput
         this.downAxis = downAxis;
         this.button1 = button1;
         this.button2 = button2;
-        this.playerId = playerId;
     }
 
     public Vector3 GetAxis()
