@@ -6,7 +6,11 @@ $pseudo = $_GET['pseudo'];
 $score = $_GET['score'];
 
 try {
-    $bdd->exec('INSERT INTO score (pseudo, score) VALUES ("' . $pseudo . '",' . $score . ')');
+    $statement = $bdd->prepare('INSERT INTO score (pseudo, score) VALUES (:pseudo, :score)');
+    $statement->execute([
+        ":pseudo" => $pseudo,
+        ":score" => $score,
+    ]);
 } catch (Error $error) {
-    echo $error;
+    echo $error->getMessage();
 }
