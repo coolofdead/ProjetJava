@@ -2,10 +2,10 @@
 -- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 13 avr. 2020 à 15:30
--- Version du serveur :  10.4.10-MariaDB
--- Version de PHP :  7.4.1
+-- Hôte : 127.0.0.1:3308
+-- Généré le :  ven. 17 avr. 2020 à 16:42
+-- Version du serveur :  8.0.18
+-- Version de PHP :  7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -28,8 +28,10 @@ SET time_zone = "+00:00";
 -- Structure de la table `score`
 --
 
-DROP TABLE IF EXISTS `score`;
-CREATE TABLE IF NOT EXISTS `score` (
+CREATE DATABASE IF NOT EXISTS starwars;
+
+DROP TABLE IF EXISTS starwars.score;
+CREATE TABLE IF NOT EXISTS starwars.score (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `pseudo` varchar(255) NOT NULL,
   `score` int(11) NOT NULL,
@@ -40,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `score` (
 -- Déchargement des données de la table `score`
 --
 
-INSERT INTO `score` (`id`, `pseudo`, `score`) VALUES
+INSERT INTO starwars.score (`id`, `pseudo`, `score`) VALUES
 (1, 'valmnt', 1590),
 (2, 'valmnt', 1590),
 (3, 'thomas', 2432),
