@@ -2,10 +2,7 @@
 
 include 'PdoConnection.php';
 
-$reponse = $bdd->query('SELECT * FROM score ORDER BY score DESC LIMIT 5');
-$rows = $reponse->fetchAll();
+$reponse = $bdd->query('SELECT pseudo, score FROM starwars.score ORDER BY score DESC LIMIT 5');
+$rows = $reponse->fetchAll(PDO::FETCH_ASSOC);
 
-foreach ($rows as $row) {
-    $rowJson = json_encode($row);
-    echo $rowJson;
-}
+echo(json_encode($rows));
