@@ -7,6 +7,8 @@ public class Player : MonoBehaviour, IDamageable
     public Vehicle player1;
     public Vehicle player2;
 
+    public static int finalScore;
+
     public int maxLife = 100;
     private int life;
     public float Life { get { return life; } }
@@ -33,6 +35,7 @@ public class Player : MonoBehaviour, IDamageable
         if (life <= 0)
         {
             life = 0;
+            finalScore = life / maxLife * score;
             EndLevelUI.DisplayEndLevelScreen(true);
         }
     }

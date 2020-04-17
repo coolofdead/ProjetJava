@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\FXAA\PostEffectsBase.cs" />
     <Compile Include="Assets\Scripts\FXAA\PostEffectsHelper.cs" />
     <Compile Include="Assets\Scripts\GoalIndicatorUI.cs" />
+    <Compile Include="Assets\Scripts\HighscoreBoard.cs" />
     <Compile Include="Assets\Scripts\Input\InputManager.cs" />
     <Compile Include="Assets\Scripts\Interface\IDamageable.cs" />
     <Compile Include="Assets\Scripts\Intro\IntroManager.cs" />
