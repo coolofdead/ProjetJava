@@ -54,7 +54,8 @@ DROP TABLE IF EXISTS starwars.levelSettings;
 CREATE TABLE IF NOT EXISTS starwars.levelSettings (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `level_id` int(11) NOT NULL,
-  `enemies_health_percentage` int(11) NOT NULL,
+  `turret_goal` int(11) NOT NULL,
+  `spaceship_goal` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
@@ -62,9 +63,9 @@ CREATE TABLE IF NOT EXISTS starwars.levelSettings (
 -- Déchargement des données de la table `levelSettings`
 --
 
-INSERT INTO starwars.levelSettings (`level_id`, `enemies_health_percentage`) VALUES
-(1, 100),
-(2, 150)
+INSERT INTO starwars.levelSettings (`level_id`, `turret_goal`, `spaceship_goal`) VALUES
+(1, 3, 0),
+(2, 4, 1)
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
