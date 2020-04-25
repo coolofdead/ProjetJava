@@ -18,22 +18,22 @@ public abstract class AbstractGoal : MonoBehaviour
     public enum GoalType { Turret, Shield, Spaceship }
     [SerializeField]
     private GoalType type;
-    public GoalType Type { get { return type; } }
+    public GoalType Type { get { return type; } set { type = value; } }
 
     protected List<GoalItem> goalItems;
 
-    protected void Update()
+    public void SetGameobjectsGoal(List<GoalItem> goalItems)  
+    {
+        this.goalItems = goalItems;
+    }
+
+    public void GetScore()
     {
         if (IsCompleted() && !isScoreGiven)
         {
             isScoreGiven = true;
             Player.player.Score += score;
         }
-    }
-
-    public void SetGameobjectsGoal(List<GoalItem> goalItems)  
-    {
-        this.goalItems = goalItems;
     }
 
     public virtual void Notify(GoalItem item) { }

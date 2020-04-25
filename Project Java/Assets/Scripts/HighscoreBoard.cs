@@ -18,7 +18,7 @@ public class HighscoreBoard : MonoBehaviour
 
     public void SaveScore()
     {
-        StartCoroutine(SaveScore(input.text, Player.finalScore));
+        StartCoroutine(SaveScore(input.text, Player.player.Score));
     }
 
     public IEnumerator GetHighscore()

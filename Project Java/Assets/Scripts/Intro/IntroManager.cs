@@ -39,6 +39,6 @@ public class IntroManager : MonoBehaviour
     public static void InitLevel() 
     {
         singleton.levelRunning = true;
-        singleton.StartCoroutine(singleton.loadingLevel.LoadScene("Level " + level));
+        singleton.StartCoroutine(singleton.loadingLevel.LoadScene("Level 1"));
     }
 }

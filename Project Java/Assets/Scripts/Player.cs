@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour, IDamageable
 {
     public Vehicle player1;
     public Vehicle player2;
 
-    public static int finalScore;
+    public static bool victory = true;
 
     public int maxLife = 100;
     private int life;
@@ -35,8 +36,8 @@ public class Player : MonoBehaviour, IDamageable
         if (life <= 0)
         {
             life = 0;
-            finalScore = life / maxLife * score;
-            EndLevelUI.DisplayEndLevelScreen(true);
+            victory = false;
+            SceneManager.LoadScene("EndScreen", LoadSceneMode.Single);
         }
     }
 

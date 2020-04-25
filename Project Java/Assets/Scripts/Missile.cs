@@ -34,7 +34,8 @@ public class Missile : MonoBehaviour
                 {
                     unit.TakeDamage(damage);
 
-                    Instantiate(hitEffect.gameObject, transform.position, Quaternion.identity);
+                    if (hitEffect != null)
+                        Instantiate(hitEffect.gameObject, transform.position, Quaternion.identity);
 
                     Destroy(gameObject);
                 }

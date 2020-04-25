@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Linq;
 
 public class Goal : MonoBehaviour
@@ -23,13 +24,17 @@ public class Goal : MonoBehaviour
     public void UpdateGoals()
     {
         foreach (AbstractGoal goal in goals)
+        {
             goal.Display();
+            goal.GetScore();
+        }
 
         bool allGoalCompleted = goals.All(goal => goal.IsCompleted());
 
         if (allGoalCompleted)
         {
-            EndLevelUI.DisplayEndLevelScreen(false);
+            Player.victory = true;
+            SceneManager.LoadScene("EndScreen", LoadSceneMode.Single);
         }
     }
 

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    public static int maxLevelReached = 0;
+    public static int maxLevelReached = 1;
 
     public MenuUI menu;
     public Transform holoMap;
