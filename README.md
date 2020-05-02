@@ -10,17 +10,17 @@
 ## Controles:
 
 ### Player 1
-z => avancer
-s => reculer
-q => gauche
-d => droite
-t => bouton 1
-a => bouton 2
+- z => avancer
+- s => reculer
+- q => gauche
+- d => droite
+- t => bouton 1
+- a => bouton 2
 
 ### Player 2
-up arrow => avancer
-down arrow => reculer
-left arrow => gauche
-right arrow => droite
-space => bouton 1
-e => bouton 2
+- up arrow => avancer
+- down arrow => reculer
+- left arrow => gauche
+- right arrow => droite
+- space => bouton 1
+- e => bouton 2
