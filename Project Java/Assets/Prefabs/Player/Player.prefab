@@ -3120,7 +3120,7 @@ MonoBehaviour:
   canonDroit: {fileID: 226732359855616592}
   canonGauche: {fileID: 1779696924212938917}
   rotateSpeed: 120
-  shotInterval: 0.25
+  shotInterval: 0.3
 --- !u!82 &5363399815596213764
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3178,7 +3178,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3208,7 +3208,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -34671,7 +34671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc054c73c315c94488979cb14125dfb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxForwardSpeed: 560
+  maxForwardSpeed: 520
   minForwardSpeed: 480
   acceleration: 220
   decelaration: 96

@@ -43,7 +43,7 @@ public class Missile : MonoBehaviour
 
             if (isAlliedMissile)
             {
-                if (unit is Enemy || unit is Turret || unit is EnemyShield)
+                if (unit is Enemy || unit is Turret || unit is EnemyShield || unit is Asteroid)
                 {
                     unit.TakeDamage(damage);
 
@@ -54,4 +54,5 @@ public class Missile : MonoBehaviour
             }
         }
     }
+
 }

@@ -41,7 +41,7 @@ public class TriFighter : Enemy
     IEnumerator MovingStraight()
     {
         movingStraight = true;
-        var bonusSpeed = speed * 1.2f;
+        var bonusSpeed = speed * 1.5f;
         speed += bonusSpeed;
 
         yield return new WaitForSeconds(movingStraightDuration);

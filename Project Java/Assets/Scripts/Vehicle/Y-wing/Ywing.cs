@@ -26,7 +26,7 @@ public class Ywing : Vehicle
         tiltLeft = -tiltRight;
 
         rbody = Player.player.gameObject.AddComponent<Rigidbody>();
-        rbody.angularDrag = 1f;
+        rbody.angularDrag = 2f;
         rbody.drag = 1f;
         rbody.useGravity = false;
 
@@ -63,7 +63,7 @@ public class Ywing : Vehicle
     public override void Act()
     {
         shield.State = !shield.State;
-        if (!shieldAudio.isPlaying)
+        if (!shieldAudio.isPlaying && shield.State)
             shieldAudio.Play();
     }
 
